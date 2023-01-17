@@ -1,27 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.breadcrumb-section{
-  background-image: url('../public/img/breadcrumb.jpg');
-}
-
-.hero__item{
-  background-image: url('../public/img/hero/banner.jpg');
-}
-
-
-
 /* Transitions */
 /* Default CSS */
 html,

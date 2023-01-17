@@ -1,0 +1,8 @@
+/* Transitions */
+@mixin transition(Kshs. args...) {
+    -webkit-transition: Kshs. args;
+    -moz-transition: Kshs. args;
+    -ms-transition: Kshs. args;
+    -o-transition: Kshs. args;
+    transition: Kshs. args;
+}

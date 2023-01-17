@@ -2,12 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Shopinfo from './Shopinfo';
+import Shop from './Shop';
 import reportWebVitals from './reportWebVitals';
+import Blog from './Blog';
+import ShoppingCart from './ShoppingCart';
+import Checkout from './Checkout';
+import BlogDetails from './BlogDetails';
+import Contact from './Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Shop />
+    <Shopinfo />
+    <ShoppingCart />
+    <Checkout />
+    <Blog />
+    <BlogDetails />
+<Contact />
   </React.StrictMode>
 );
 
