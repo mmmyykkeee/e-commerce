@@ -21,7 +21,7 @@ root.render(
     <Checkout />
     <Blog />
     <BlogDetails />
-<Contact />
+    <Contact />
   </React.StrictMode>
 );
 
