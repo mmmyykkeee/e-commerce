@@ -1,18 +1,16 @@
-import React from 'react'
-import Footer from './Footer';
-import Header from './Header';
-import Bg from './Bg'
+import React from "react";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function Shopinfo() {
   return (
     <div>
-      
       <Header />
-      
+
       <section
         class="breadcrumb-section set-bg"
         data-setbg="img/breadcrumb.jpg"
-        >
+      >
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
@@ -91,10 +89,10 @@ function Shopinfo() {
                     </div>
                   </div>
                 </div>
-                <a href="#" class="primary-btn">
+                <a href="javascript:void(0);" class="primary-btn">
                   ADD TO CARD
                 </a>
-                <a href="#" class="heart-icon">
+                <a href="javascript:void(0);" class="heart-icon">
                   <span class="icon_heart_alt"></span>
                 </a>
                 <ul>
@@ -113,16 +111,16 @@ function Shopinfo() {
                   <li>
                     <b>Share on</b>
                     <div class="share">
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-facebook"></i>
                       </a>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-twitter"></i>
                       </a>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-instagram"></i>
                       </a>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-pinterest"></i>
                       </a>
                     </div>
@@ -251,21 +249,24 @@ function Shopinfo() {
               <div class="product__item">
                 <div
                   class="product__item__pic set-bg"
+                  style={{
+                    backgroundImage: "url('img/product/product-1.jpg')",
+                  }}
                   data-setbg="img/product/product-1.jpg"
                 >
                   <ul class="product__item__pic__hover">
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-heart"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-retweet"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-shopping-cart"></i>
                       </a>
                     </li>
@@ -273,7 +274,7 @@ function Shopinfo() {
                 </div>
                 <div class="product__item__text">
                   <h6>
-                    <a href="#">1</a>
+                    <a href="javascript:void(0);">1</a>
                   </h6>
                   <h5>$30.00</h5>
                 </div>
@@ -283,21 +284,24 @@ function Shopinfo() {
               <div class="product__item">
                 <div
                   class="product__item__pic set-bg"
+                  style={{
+                    backgroundImage: "url('img/product/product-2.jpg')",
+                  }}
                   data-setbg="img/product/product-2.jpg"
                 >
                   <ul class="product__item__pic__hover">
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-heart"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-retweet"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-shopping-cart"></i>
                       </a>
                     </li>
@@ -305,7 +309,7 @@ function Shopinfo() {
                 </div>
                 <div class="product__item__text">
                   <h6>
-                    <a href="#">2</a>
+                    <a href="javascript:void(0);">2</a>
                   </h6>
                   <h5>$30.00</h5>
                 </div>
@@ -315,21 +319,24 @@ function Shopinfo() {
               <div class="product__item">
                 <div
                   class="product__item__pic set-bg"
+                  style={{
+                    backgroundImage: "url('img/product/product-3.jpg')",
+                  }}
                   data-setbg="img/product/product-3.jpg"
                 >
                   <ul class="product__item__pic__hover">
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-heart"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-retweet"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-shopping-cart"></i>
                       </a>
                     </li>
@@ -337,7 +344,7 @@ function Shopinfo() {
                 </div>
                 <div class="product__item__text">
                   <h6>
-                    <a href="#">3</a>
+                    <a href="javascript:void(0);">3</a>
                   </h6>
                   <h5>$30.00</h5>
                 </div>
@@ -347,21 +354,24 @@ function Shopinfo() {
               <div class="product__item">
                 <div
                   class="product__item__pic set-bg"
+                  style={{
+                    backgroundImage: "url('img/product/product-7.jpg')",
+                  }}
                   data-setbg="img/product/product-7.jpg"
                 >
                   <ul class="product__item__pic__hover">
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-heart"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-retweet"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="javascript:void(0);">
                         <i class="fa fa-shopping-cart"></i>
                       </a>
                     </li>
@@ -369,7 +379,7 @@ function Shopinfo() {
                 </div>
                 <div class="product__item__text">
                   <h6>
-                    <a href="#">4</a>
+                    <a href="javascript:void(0);">4</a>
                   </h6>
                   <h5>$30.00</h5>
                 </div>
@@ -384,4 +394,4 @@ function Shopinfo() {
   );
 }
 
-export default Shopinfo
+export default Shopinfo;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
@@ -103,13 +103,13 @@ function Footer() {
                 <div class="footer__copyright__text">
                   <p>
                     Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script>{" "}
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>{" "}
                     All rights reserved | <b>TK</b>
                   </p>
                 </div>
-                <div class="footer__copyright__payment">
-                  <img src="img/payment-item.png" alt="" />
-                </div>
+                <div class="footer__copyright__payment"></div>
               </div>
             </div>
           </div>
@@ -119,4 +119,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;

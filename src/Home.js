@@ -1,4 +1,7 @@
-import React from 'react'
+import React from "react";
+
+
+
 
 function Home() {
   return (
@@ -52,7 +55,7 @@ function Home() {
             <div className="col-lg-9">
               <div className="hero__search">
                 <div className="hero__search__form mt-3">
-                  <form action="#" className=''>
+                  <form action="#" className="">
                     <div className="hero__search__categories">
                       All Categories
                       <span className="arrow_carrot-down"></span>
@@ -76,7 +79,10 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="hero__item set-bg" data-set-bg="img/hero/banner.jpg">
+              <div
+                className="hero__item set-bg"
+                data-set-bg="img/hero/banner.jpg"
+              >
                 <div className="hero__text">
                   <span>FRESH FRUIT</span>
                   <h2>
@@ -84,7 +90,7 @@ function Home() {
                     100% Organic
                   </h2>
                   <p>Free Pickup and Delivery Available</p>
-                  <a href="#" className="primary-btn">
+                  <a href="" className="primary-btn">
                     SHOP NOW
                   </a>
                 </div>
@@ -98,10 +104,8 @@ function Home() {
           <div className="row">
             <div className="categories__slider owl-carousel">
               <div className="col-lg-3">
-                <div
-                  className="categories__item set-bg">
-                  <img src="img/categories/cat-1.jpg"
-                />
+                <div className="categories__item set-bg">
+                  <img src="img/categories/cat-1.jpg" alt="" />
                   <h5>
                     <a href="#">Fresh Fruit</a>
                   </h5>
@@ -171,12 +175,18 @@ function Home() {
               </div>
             </div>
           </div>
+
+
+
+
           <div className="row featured__filter">
             <div className="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
               <div className="featured__item">
                 <div
                   className="featured__item__pic  set-bg"
-                  data-setbg="img/featured/feature-1.jpg"
+                  style={{
+                    backgroundImage: "url('img/featured/feature-1.jpg')",
+                  }}
                 >
                   <ul className="featured__item__pic__hover">
                     <li>
@@ -208,7 +218,9 @@ function Home() {
               <div className="featured__item">
                 <div
                   className="featured__item__pic set-bg"
-                  data-setbg="img/featured/feature-2.jpg"
+                  style={{
+                    backgroundImage: "url('img/featured/feature-2.jpg')",
+                  }}
                 >
                   <ul className="featured__item__pic__hover">
                     <li>
@@ -240,7 +252,9 @@ function Home() {
               <div className="featured__item">
                 <div
                   className="featured__item__pic set-bg"
-                  data-setbg="img/featured/feature-3.jpg"
+                  style={{
+                    backgroundImage: "url('img/featured/feature-3.jpg')",
+                  }}
                 >
                   <ul className="featured__item__pic__hover">
                     <li>
@@ -272,7 +286,9 @@ function Home() {
               <div className="featured__item">
                 <div
                   className="featured__item__pic set-bg"
-                  data-setbg="img/featured/feature-4.jpg"
+                  style={{
+                    backgroundImage: "url('img/featured/feature-4.jpg')",
+                  }}
                 >
                   <ul className="featured__item__pic__hover">
                     <li>
@@ -304,7 +320,9 @@ function Home() {
               <div className="featured__item">
                 <div
                   className="featured__item__pic set-bg"
-                  data-setbg="img/featured/feature-5.jpg"
+                  style={{
+                    backgroundImage: "url('img/featured/feature-5.jpg')",
+                  }}
                 >
                   <ul className="featured__item__pic__hover">
                     <li>
@@ -336,7 +354,9 @@ function Home() {
               <div className="featured__item">
                 <div
                   className="featured__item__pic set-bg"
-                  data-setbg="img/featured/feature-6.jpg"
+                  style={{
+                    backgroundImage: "url('img/featured/feature-6.jpg')",
+                  }}
                 >
                   <ul className="featured__item__pic__hover">
                     <li>
@@ -368,7 +388,9 @@ function Home() {
               <div className="featured__item">
                 <div
                   className="featured__item__pic set-bg"
-                  data-setbg="img/featured/feature-7.jpg"
+                  style={{
+                    backgroundImage: "url('img/featured/feature-7.jpg')",
+                  }}
                 >
                   <ul className="featured__item__pic__hover">
                     <li>
@@ -400,7 +422,9 @@ function Home() {
               <div className="featured__item">
                 <div
                   className="featured__item__pic set-bg"
-                  data-setbg="img/featured/feature-8.jpg"
+                  style={{
+                    backgroundImage: "url('img/featured/feature-8.jpg')",
+                  }}
                 >
                   <ul className="featured__item__pic__hover">
                     <li>
@@ -429,6 +453,15 @@ function Home() {
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
         </div>
       </section>
       <div className="banner">
@@ -446,9 +479,8 @@ function Home() {
             </div>
           </div>
         </div>
-          </div>
-          
-          
+      </div>
+
       <section className="latest-product spad">
         <div className="container">
           <div className="row">
@@ -739,4 +771,4 @@ function Home() {
   );
 }
 
-export default Home
+export default Home;
