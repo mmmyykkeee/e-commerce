@@ -1,111 +1,23 @@
 import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import Hero from "./Hero";
 
 function Shop() {
   return (
     <div>
       <Header />
-      <section class="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="hero__categories">
-                <div class="hero__categories__all">
-                  <i class="fa fa-bars"></i>
-                  <span>All Departments</span>
-                </div>
-                <ul>
-                  <li>
-                    <a href="#">Fresh Meat</a>
-                  </li>
-                  <li>
-                    <a href="#">Vegetables</a>
-                  </li>
-                  <li>
-                    <a href="#">Fruit & Nut Gifts</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Berries</a>
-                  </li>
-                  <li>
-                    <a href="#">Ocean Foods</a>
-                  </li>
-                  <li>
-                    <a href="#">Butter & Eggs</a>
-                  </li>
-                  <li>
-                    <a href="#">Fastfood</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Onion</a>
-                  </li>
-                  <li>
-                    <a href="#">Papayaya & Crisps</a>
-                  </li>
-                  <li>
-                    <a href="#">Oatmeal</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Bananas</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-9">
-              <div class="hero__search">
-                <div class="hero__search__form">
-                  <form action="#">
-                    <div class="hero__search__categories">
-                      All Categories
-                      <span class="arrow_carrot-down"></span>
-                    </div>
-                    <input
-                      type="text"
-                      placeholder="What are you looking for?"
-                    />
-                    <button type="submit" class="site-btn">
-                      SEARCH
-                    </button>
-                  </form>
-                </div>
-                <div class="hero__search__phone">
-                  <div class="hero__search__phone__icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <div class="hero__search__phone__text">
-                    <h5>704-768-7449</h5>
-                    <span>24/7 Support</span>
-                  </div>
-                </div>
-              </div>
-              <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
-                <div class="hero__text">
-                  <span>FRESH FRUIT</span>
-                  <h2>
-                    Vegetable <br />
-                    100% Organic
-                  </h2>
-                  <p>Free Pickup and Delivery Available</p>
-                  <a href="#" class="primary-btn">
-                    SHOP NOW
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
       <section
-        class="breadcrumb-section set-bg"
+        className="breadcrumb-section set-bg"
         data-setbg="img/breadcrumb.jpg"
       >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <div class="breadcrumb__text">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <div className="breadcrumb__text">
                 <h2>Ogani Shop</h2>
-                <div class="breadcrumb__option">
+                <div className="breadcrumb__option">
                   <a href="./index.html">Home</a>
                   <span>Shop</span>
                 </div>
@@ -114,12 +26,12 @@ function Shop() {
           </div>
         </div>
       </section>
-      <section class="product spad">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-5">
-              <div class="sidebar">
-                <div class="sidebar__item">
+      <section className="product spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 col-md-5">
+              <div className="sidebar">
+                <div className="sidebar__item">
                   <h4>Department</h4>
                   <ul>
                     <li>
@@ -154,155 +66,155 @@ function Shop() {
                     </li>
                   </ul>
                 </div>
-                <div class="sidebar__item">
+                <div className="sidebar__item">
                   <h4>Price</h4>
-                  <div class="price-range-wrap">
+                  <div className="price-range-wrap">
                     <div
-                      class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                      className="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
                       data-min="10"
                       data-max="540"
                     >
-                      <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+                      <div className="ui-slider-range ui-corner-all ui-widget-header"></div>
                       <span
                         tabindex="0"
-                        class="ui-slider-handle ui-corner-all ui-state-default"
+                        className="ui-slider-handle ui-corner-all ui-state-default"
                       ></span>
                       <span
                         tabindex="0"
-                        class="ui-slider-handle ui-corner-all ui-state-default"
+                        className="ui-slider-handle ui-corner-all ui-state-default"
                       ></span>
                     </div>
-                    <div class="range-slider">
-                      <div class="price-input">
+                    <div className="range-slider">
+                      <div className="price-input">
                         <input type="text" id="minamount" />
                         <input type="text" id="maxamount" />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="sidebar__item sidebar__item__color--option">
+                <div className="sidebar__item sidebar__item__color--option">
                   <h4>Colors</h4>
-                  <div class="sidebar__item__color sidebar__item__color--white">
+                  <div className="sidebar__item__color sidebar__item__color--white">
                     <label for="white">
                       White
                       <input type="radio" id="white" />
                     </label>
                   </div>
-                  <div class="sidebar__item__color sidebar__item__color--gray">
+                  <div className="sidebar__item__color sidebar__item__color--gray">
                     <label for="gray">
                       Gray
                       <input type="radio" id="gray" />
                     </label>
                   </div>
-                  <div class="sidebar__item__color sidebar__item__color--red">
+                  <div className="sidebar__item__color sidebar__item__color--red">
                     <label for="red">
                       Red
                       <input type="radio" id="red" />
                     </label>
                   </div>
-                  <div class="sidebar__item__color sidebar__item__color--black">
+                  <div className="sidebar__item__color sidebar__item__color--black">
                     <label for="black">
                       Black
                       <input type="radio" id="black" />
                     </label>
                   </div>
-                  <div class="sidebar__item__color sidebar__item__color--blue">
+                  <div className="sidebar__item__color sidebar__item__color--blue">
                     <label for="blue">
                       Blue
                       <input type="radio" id="blue" />
                     </label>
                   </div>
-                  <div class="sidebar__item__color sidebar__item__color--green">
+                  <div className="sidebar__item__color sidebar__item__color--green">
                     <label for="green">
                       Green
                       <input type="radio" id="green" />
                     </label>
                   </div>
                 </div>
-                <div class="sidebar__item">
+                <div className="sidebar__item">
                   <h4>Popular Size</h4>
-                  <div class="sidebar__item__size">
+                  <div className="sidebar__item__size">
                     <label for="large">
                       Large
                       <input type="radio" id="large" />
                     </label>
                   </div>
-                  <div class="sidebar__item__size">
+                  <div className="sidebar__item__size">
                     <label for="medium">
                       Medium
                       <input type="radio" id="medium" />
                     </label>
                   </div>
-                  <div class="sidebar__item__size">
+                  <div className="sidebar__item__size">
                     <label for="small">
                       Small
                       <input type="radio" id="small" />
                     </label>
                   </div>
-                  <div class="sidebar__item__size">
+                  <div className="sidebar__item__size">
                     <label for="tiny">
                       Tiny
                       <input type="radio" id="tiny" />
                     </label>
                   </div>
                 </div>
-                <div class="sidebar__item">
-                  <div class="latest-product__text">
+                <div className="sidebar__item">
+                  <div className="latest-product__text">
                     <h4>Latest Products</h4>
-                    <div class="latest-product__slider owl-carousel">
-                      <div class="latest-prdouct__slider__item">
-                        <a href="#" class="latest-product__item">
-                          <div class="latest-product__item__pic">
+                    <div className="latest-product__slider owl-carousel">
+                      <div className="latest-prdouct__slider__item">
+                        <a href="#" className="latest-product__item">
+                          <div className="latest-product__item__pic">
                             <img src="img/latest-product/lp-1.jpg" alt="" />
                           </div>
-                          <div class="latest-product__item__text">
+                          <div className="latest-product__item__text">
                             <h6>1</h6>
                             <span>Kshs. 30.00</span>
                           </div>
                         </a>
-                        <a href="#" class="latest-product__item">
-                          <div class="latest-product__item__pic">
+                        <a href="#" className="latest-product__item">
+                          <div className="latest-product__item__pic">
                             <img src="img/latest-product/lp-2.jpg" alt="" />
                           </div>
-                          <div class="latest-product__item__text">
+                          <div className="latest-product__item__text">
                             <h6>2</h6>
                             <span>Kshs. 30.00</span>
                           </div>
                         </a>
-                        <a href="#" class="latest-product__item">
-                          <div class="latest-product__item__pic">
+                        <a href="#" className="latest-product__item">
+                          <div className="latest-product__item__pic">
                             <img src="img/latest-product/lp-3.jpg" alt="" />
                           </div>
-                          <div class="latest-product__item__text">
+                          <div className="latest-product__item__text">
                             <h6>3</h6>
                             <span>Kshs. 30.00</span>
                           </div>
                         </a>
                       </div>
-                      <div class="latest-prdouct__slider__item">
-                        <a href="#" class="latest-product__item">
-                          <div class="latest-product__item__pic">
+                      <div className="latest-prdouct__slider__item">
+                        <a href="#" className="latest-product__item">
+                          <div className="latest-product__item__pic">
                             <img src="img/latest-product/lp-1.jpg" alt="" />
                           </div>
-                          <div class="latest-product__item__text">
+                          <div className="latest-product__item__text">
                             <h6>4</h6>
                             <span>Kshs. 30.00</span>
                           </div>
                         </a>
-                        <a href="#" class="latest-product__item">
-                          <div class="latest-product__item__pic">
+                        <a href="#" className="latest-product__item">
+                          <div className="latest-product__item__pic">
                             <img src="img/latest-product/lp-2.jpg" alt="" />
                           </div>
-                          <div class="latest-product__item__text">
+                          <div className="latest-product__item__text">
                             <h6>5</h6>
                             <span>Kshs. 30.00</span>
                           </div>
                         </a>
-                        <a href="#" class="latest-product__item">
-                          <div class="latest-product__item__pic">
+                        <a href="#" className="latest-product__item">
+                          <div className="latest-product__item__pic">
                             <img src="img/latest-product/lp-3.jpg" alt="" />
                           </div>
-                          <div class="latest-product__item__text">
+                          <div className="latest-product__item__text">
                             <h6>6</h6>
                             <span>Kshs. 30.00</span>
                           </div>
@@ -313,247 +225,247 @@ function Shop() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-9 col-md-7">
-              <div class="product__discount">
-                <div class="section-title product__discount__title">
+            <div className="col-lg-9 col-md-7">
+              <div className="product__discount">
+                <div className="section-title product__discount__title">
                   <h2>Sale Off</h2>
                 </div>
-                <div class="row">
-                  <div class="product__discount__slider owl-carousel">
-                    <div class="col-lg-4">
-                      <div class="product__discount__item">
+                <div className="row">
+                  <div className="product__discount__slider owl-carousel">
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
                         <div
-                          class="product__discount__item__pic set-bg"
+                          className="product__discount__item__pic set-bg"
                           style={{
                             backgroundImage:
                               "url('img/product/discount/pd-1.jpg')",
                           }}
                         >
-                          <div class="product__discount__percent">-20%</div>
-                          <ul class="product__item__pic__hover">
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
                             <li>
                               <a href="#">
-                                <i class="fa fa-heart"></i>
+                                <i className="fa fa-heart"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-retweet"></i>
+                                <i className="fa fa-retweet"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-shopping-cart"></i>
+                                <i className="fa fa-shopping-cart"></i>
                               </a>
                             </li>
                           </ul>
                         </div>
-                        <div class="product__discount__item__text">
+                        <div className="product__discount__item__text">
                           <span>Dried Fruit</span>
                           <h5>
                             <a href="#">Raisin’n’nuts</a>
                           </h5>
-                          <div class="product__item__price">
+                          <div className="product__item__price">
                             Kshs. 30.00 <span>Kshs. 36.00</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div class="product__discount__item">
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
                         <div
-                          class="product__discount__item__pic set-bg"
+                          className="product__discount__item__pic set-bg"
                           style={{
                             backgroundImage:
                               "url('img/product/discount/pd-2.jpg')",
                           }}
                           data-setbg="img/product/discount/pd-2.jpg"
                         >
-                          <div class="product__discount__percent">-20%</div>
-                          <ul class="product__item__pic__hover">
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
                             <li>
                               <a href="#">
-                                <i class="fa fa-heart"></i>
+                                <i className="fa fa-heart"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-retweet"></i>
+                                <i className="fa fa-retweet"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-shopping-cart"></i>
+                                <i className="fa fa-shopping-cart"></i>
                               </a>
                             </li>
                           </ul>
                         </div>
-                        <div class="product__discount__item__text">
+                        <div className="product__discount__item__text">
                           <span>Vegetables</span>
                           <h5>
                             <a href="#">Vegetables’package</a>
                           </h5>
-                          <div class="product__item__price">
+                          <div className="product__item__price">
                             Kshs. 30.00 <span>Kshs. 36.00</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div class="product__discount__item">
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
                         <div
-                          class="product__discount__item__pic set-bg"
+                          className="product__discount__item__pic set-bg"
                           style={{
                             backgroundImage:
                               "url('img/product/discount/pd-3.jpg')",
                           }}
                           data-setbg="img/product/discount/pd-3.jpg"
                         >
-                          <div class="product__discount__percent">-20%</div>
-                          <ul class="product__item__pic__hover">
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
                             <li>
                               <a href="#">
-                                <i class="fa fa-heart"></i>
+                                <i className="fa fa-heart"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-retweet"></i>
+                                <i className="fa fa-retweet"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-shopping-cart"></i>
+                                <i className="fa fa-shopping-cart"></i>
                               </a>
                             </li>
                           </ul>
                         </div>
-                        <div class="product__discount__item__text">
+                        <div className="product__discount__item__text">
                           <span>Dried Fruit</span>
                           <h5>
                             <a href="#">Mixed Fruitss</a>
                           </h5>
-                          <div class="product__item__price">
+                          <div className="product__item__price">
                             Kshs. 30.00 <span>Kshs. 36.00</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div class="product__discount__item">
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
                         <div
-                          class="product__discount__item__pic set-bg"
+                          className="product__discount__item__pic set-bg"
                           style={{
                             backgroundImage:
                               "url('img/product/discount/pd-4.jpg')",
                           }}
                           data-setbg="img/product/discount/pd-4.jpg"
                         >
-                          <div class="product__discount__percent">-20%</div>
-                          <ul class="product__item__pic__hover">
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
                             <li>
                               <a href="#">
-                                <i class="fa fa-heart"></i>
+                                <i className="fa fa-heart"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-retweet"></i>
+                                <i className="fa fa-retweet"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-shopping-cart"></i>
+                                <i className="fa fa-shopping-cart"></i>
                               </a>
                             </li>
                           </ul>
                         </div>
-                        <div class="product__discount__item__text">
+                        <div className="product__discount__item__text">
                           <span>Dried Fruit</span>
                           <h5>
                             <a href="#">Raisin’n’nuts</a>
                           </h5>
-                          <div class="product__item__price">
+                          <div className="product__item__price">
                             Kshs. 30.00 <span>Kshs. 36.00</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div class="product__discount__item">
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
                         <div
-                          class="product__discount__item__pic set-bg"
+                          className="product__discount__item__pic set-bg"
                           style={{
                             backgroundImage:
                               "url('img/product/discount/pd-5.jpg')",
                           }}
                           data-setbg="img/product/discount/pd-5.jpg"
                         >
-                          <div class="product__discount__percent">-20%</div>
-                          <ul class="product__item__pic__hover">
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
                             <li>
                               <a href="#">
-                                <i class="fa fa-heart"></i>
+                                <i className="fa fa-heart"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-retweet"></i>
+                                <i className="fa fa-retweet"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-shopping-cart"></i>
+                                <i className="fa fa-shopping-cart"></i>
                               </a>
                             </li>
                           </ul>
                         </div>
-                        <div class="product__discount__item__text">
+                        <div className="product__discount__item__text">
                           <span>Dried Fruit</span>
                           <h5>
                             <a href="#">Raisin’n’nuts</a>
                           </h5>
-                          <div class="product__item__price">
+                          <div className="product__item__price">
                             Kshs. 30.00 <span>Kshs. 36.00</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div class="product__discount__item">
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
                         <div
-                          class="product__discount__item__pic set-bg"
+                          className="product__discount__item__pic set-bg"
                           style={{
                             backgroundImage:
                               "url('img/product/discount/pd-6.jpg')",
                           }}
                           data-setbg="img/product/discount/pd-6.jpg"
                         >
-                          <div class="product__discount__percent">-20%</div>
-                          <ul class="product__item__pic__hover">
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
                             <li>
                               <a href="#">
-                                <i class="fa fa-heart"></i>
+                                <i className="fa fa-heart"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-retweet"></i>
+                                <i className="fa fa-retweet"></i>
                               </a>
                             </li>
                             <li>
                               <a href="#">
-                                <i class="fa fa-shopping-cart"></i>
+                                <i className="fa fa-shopping-cart"></i>
                               </a>
                             </li>
                           </ul>
                         </div>
-                        <div class="product__discount__item__text">
+                        <div className="product__discount__item__text">
                           <span>Dried Fruit</span>
                           <h5>
                             <a href="#">Raisin’n’nuts</a>
                           </h5>
-                          <div class="product__item__price">
+                          <div className="product__item__price">
                             Kshs. 30.00 <span>Kshs. 36.00</span>
                           </div>
                         </div>
@@ -562,10 +474,10 @@ function Shop() {
                   </div>
                 </div>
               </div>
-              <div class="filter__item">
-                <div class="row">
-                  <div class="col-lg-4 col-md-5">
-                    <div class="filter__sort">
+              <div className="filter__item">
+                <div className="row">
+                  <div className="col-lg-4 col-md-5">
+                    <div className="filter__sort">
                       <span>Sort By</span>
                       <select>
                         <option value="0">Default</option>
@@ -573,50 +485,50 @@ function Shop() {
                       </select>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-4">
-                    <div class="filter__found">
+                  <div className="col-lg-4 col-md-4">
+                    <div className="filter__found">
                       <h6>
                         <span>16</span> Products found
                       </h6>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-3">
-                    <div class="filter__option">
-                      <span class="icon_grid-2x2"></span>
-                      <span class="icon_ul"></span>
+                  <div className="col-lg-4 col-md-3">
+                    <div className="filter__option">
+                      <span className="icon_grid-2x2"></span>
+                      <span className="icon_ul"></span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+              <div className="row">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-1.jpg')",
                       }}
                       data-setbg="img/product/product-1.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">1</a>
                       </h6>
@@ -624,34 +536,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-2.jpg')",
                       }}
                       data-setbg="img/product/product-2.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">2</a>
                       </h6>
@@ -659,34 +571,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-3.jpg')",
                       }}
                       data-setbg="img/product/product-3.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">3</a>
                       </h6>
@@ -694,34 +606,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-4.jpg')",
                       }}
                       data-setbg="img/product/product-4.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">4</a>
                       </h6>
@@ -729,34 +641,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-5.jpg')",
                       }}
                       data-setbg="img/product/product-5.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">5</a>
                       </h6>
@@ -764,34 +676,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-6.jpg')",
                       }}
                       data-setbg="img/product/product-6.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">6</a>
                       </h6>
@@ -799,34 +711,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-7.jpg')",
                       }}
                       data-setbg="img/product/product-7.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">7</a>
                       </h6>
@@ -834,34 +746,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-8.jpg')",
                       }}
                       data-setbg="img/product/product-8.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">8</a>
                       </h6>
@@ -869,34 +781,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-9.jpg')",
                       }}
                       data-setbg="img/product/product-9.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">9</a>
                       </h6>
@@ -904,34 +816,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-10.jpg')",
                       }}
                       data-setbg="img/product/product-10.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">10</a>
                       </h6>
@@ -939,34 +851,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-11.jpg')",
                       }}
                       data-setbg="img/product/product-11.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">11</a>
                       </h6>
@@ -974,34 +886,34 @@ function Shop() {
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="product__item">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
                     <div
-                      class="product__item__pic set-bg"
+                      className="product__item__pic set-bg"
                       style={{
                         backgroundImage: "url('img/product/product-12.jpg')",
                       }}
                       data-setbg="img/product/product-12.jpg"
                     >
-                      <ul class="product__item__pic__hover">
+                      <ul className="product__item__pic__hover">
                         <li>
                           <a href="#">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-retweet"></i>
+                            <i className="fa fa-retweet"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i className="fa fa-shopping-cart"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="product__item__text">
+                    <div className="product__item__text">
                       <h6>
                         <a href="#">12</a>
                       </h6>
@@ -1010,12 +922,12 @@ function Shop() {
                   </div>
                 </div>
               </div>
-              <div class="product__pagination">
+              <div className="product__pagination">
                 <a href="#">1</a>
                 <a href="#">2</a>
                 <a href="#">3</a>
                 <a href="#">
-                  <i class="fa fa-long-arrow-right"></i>
+                  <i className="fa fa-long-arrow-right"></i>
                 </a>
               </div>
             </div>

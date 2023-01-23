@@ -17,7 +17,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    
+    <Shopinfo />
+    <Shop />
+    <Blog />
+    <ShoppingCart />
+    <Checkout />
+    <BlogDetails />
+    <Contact />
+    <Upload />
+    <Login />
   </React.StrictMode>
 );
 

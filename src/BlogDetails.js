@@ -1,110 +1,22 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import Hero from "./Hero";
 
 function BlogDetails() {
   return (
     <div>
       <Header />
-      <section class="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="hero__categories">
-                <div class="hero__categories__all">
-                  <i class="fa fa-bars"></i>
-                  <span>All Departments</span>
-                </div>
-                <ul>
-                  <li>
-                    <a href="#">Fresh Meat</a>
-                  </li>
-                  <li>
-                    <a href="#">Vegetables</a>
-                  </li>
-                  <li>
-                    <a href="#">Fruit & Nut Gifts</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Berries</a>
-                  </li>
-                  <li>
-                    <a href="#">Ocean Foods</a>
-                  </li>
-                  <li>
-                    <a href="#">Butter & Eggs</a>
-                  </li>
-                  <li>
-                    <a href="#">Fastfood</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Onion</a>
-                  </li>
-                  <li>
-                    <a href="#">Papayaya & Crisps</a>
-                  </li>
-                  <li>
-                    <a href="#">Oatmeal</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Bananas</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-9">
-              <div class="hero__search">
-                <div class="hero__search__form">
-                  <form action="#">
-                    <div class="hero__search__categories">
-                      All Categories
-                      <span class="arrow_carrot-down"></span>
-                    </div>
-                    <input
-                      type="text"
-                      placeholder="What are you looking for?"
-                    />
-                    <button type="submit" class="site-btn">
-                      SEARCH
-                    </button>
-                  </form>
-                </div>
-                <div class="hero__search__phone">
-                  <div class="hero__search__phone__icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <div class="hero__search__phone__text">
-                    <h5>704-768-7449</h5>
-                    <span>24/7 Support</span>
-                  </div>
-                </div>
-              </div>
-              <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
-                <div class="hero__text">
-                  <span>FRESH FRUIT</span>
-                  <h2>
-                    Vegetable <br />
-                    100% Organic
-                  </h2>
-                  <p>Free Pickup and Delivery Available</p>
-                  <a href="#" class="primary-btn">
-                    SHOP NOW
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       <section
-        class="blog-details-hero set-bg"
+        className="blog-details-hero set-bg"
         data-setbg="img/blog/details/details-hero.jpg"
       >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="blog__details__hero__text">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="blog__details__hero__text">
                 <h2>The Moment You Need To Remove Garlic From The Menu</h2>
                 <ul>
                   <li>By Michael Scofield</li>
@@ -117,20 +29,20 @@ function BlogDetails() {
         </div>
       </section>
 
-      <section class="blog-details spad">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-5 order-md-1 order-2">
-              <div class="blog__sidebar">
-                <div class="blog__sidebar__search">
+      <section className="blog-details spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-5 order-md-1 order-2">
+              <div className="blog__sidebar">
+                <div className="blog__sidebar__search">
                   <form action="#">
                     <input type="text" placeholder="Search..." />
                     <button type="submit">
-                      <span class="icon_search"></span>
+                      <span className="icon_search"></span>
                     </button>
                   </form>
                 </div>
-                <div class="blog__sidebar__item">
+                <div className="blog__sidebar__item">
                   <h4>Categories</h4>
                   <ul>
                     <li>
@@ -150,14 +62,14 @@ function BlogDetails() {
                     </li>
                   </ul>
                 </div>
-                <div class="blog__sidebar__item">
+                <div className="blog__sidebar__item">
                   <h4>Recent News</h4>
-                  <div class="blog__sidebar__recent">
-                    <a href="#" class="blog__sidebar__recent__item">
-                      <div class="blog__sidebar__recent__item__pic">
+                  <div className="blog__sidebar__recent">
+                    <a href="#" className="blog__sidebar__recent__item">
+                      <div className="blog__sidebar__recent__item__pic">
                         <img src="img/blog/sidebar/sr-1.jpg" alt="" />
                       </div>
-                      <div class="blog__sidebar__recent__item__text">
+                      <div className="blog__sidebar__recent__item__text">
                         <h6>
                           09 Kinds Of Vegetables
                           <br /> Protect The Liver
@@ -165,11 +77,11 @@ function BlogDetails() {
                         <span>MAR 05, 2019</span>
                       </div>
                     </a>
-                    <a href="#" class="blog__sidebar__recent__item">
-                      <div class="blog__sidebar__recent__item__pic">
+                    <a href="#" className="blog__sidebar__recent__item">
+                      <div className="blog__sidebar__recent__item__pic">
                         <img src="img/blog/sidebar/sr-2.jpg" alt="" />
                       </div>
-                      <div class="blog__sidebar__recent__item__text">
+                      <div className="blog__sidebar__recent__item__text">
                         <h6>
                           Tips You To Balance
                           <br /> Nutrition Meal Day
@@ -177,11 +89,11 @@ function BlogDetails() {
                         <span>MAR 05, 2019</span>
                       </div>
                     </a>
-                    <a href="#" class="blog__sidebar__recent__item">
-                      <div class="blog__sidebar__recent__item__pic">
+                    <a href="#" className="blog__sidebar__recent__item">
+                      <div className="blog__sidebar__recent__item__pic">
                         <img src="img/blog/sidebar/sr-3.jpg" alt="" />
                       </div>
-                      <div class="blog__sidebar__recent__item__text">
+                      <div className="blog__sidebar__recent__item__text">
                         <h6>
                           4 Principles Help You Lose <br />
                           Weight With Vegetables
@@ -191,9 +103,9 @@ function BlogDetails() {
                     </a>
                   </div>
                 </div>
-                <div class="blog__sidebar__item">
+                <div className="blog__sidebar__item">
                   <h4>Search By</h4>
-                  <div class="blog__sidebar__item__tags">
+                  <div className="blog__sidebar__item__tags">
                     <a href="#">Apple</a>
                     <a href="#">Beauty</a>
                     <a href="#">Vegetables</a>
@@ -204,8 +116,8 @@ function BlogDetails() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-8 col-md-7 order-md-1 order-1">
-              <div class="blog__details__text">
+            <div className="col-lg-8 col-md-7 order-md-1 order-1">
+              <div className="blog__details__text">
                 <img src="img/blog/details/details-pic.jpg" alt="" />
                 <p>
                   Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam
@@ -233,21 +145,21 @@ function BlogDetails() {
                   the main house, the adjacent stables
                 </p>
               </div>
-              <div class="blog__details__content">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="blog__details__author">
-                      <div class="blog__details__author__pic">
+              <div className="blog__details__content">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <div className="blog__details__author">
+                      <div className="blog__details__author__pic">
                         <img src="img/blog/details/details-author.jpg" alt="" />
                       </div>
-                      <div class="blog__details__author__text">
+                      <div className="blog__details__author__text">
                         <h6>Michael Scofield</h6>
                         <span>Admin</span>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6">
-                    <div class="blog__details__widget">
+                  <div className="col-lg-6">
+                    <div className="blog__details__widget">
                       <ul>
                         <li>
                           <span>Categories:</span> Food
@@ -257,21 +169,21 @@ function BlogDetails() {
                           Food, Life Style
                         </li>
                       </ul>
-                      <div class="blog__details__social">
+                      <div className="blog__details__social">
                         <a href="#">
-                          <i class="fa fa-facebook"></i>
+                          <i className="fa fa-facebook"></i>
                         </a>
                         <a href="#">
-                          <i class="fa fa-twitter"></i>
+                          <i className="fa fa-twitter"></i>
                         </a>
                         <a href="#">
-                          <i class="fa fa-google-plus"></i>
+                          <i className="fa fa-google-plus"></i>
                         </a>
                         <a href="#">
-                          <i class="fa fa-linkedin"></i>
+                          <i className="fa fa-linkedin"></i>
                         </a>
                         <a href="#">
-                          <i class="fa fa-envelope"></i>
+                          <i className="fa fa-envelope"></i>
                         </a>
                       </div>
                     </div>
@@ -283,28 +195,28 @@ function BlogDetails() {
         </div>
       </section>
 
-      <section class="related-blog spad">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-title related-blog-title">
+      <section className="related-blog spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title related-blog-title">
                 <h2>Post You May Like</h2>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="blog__item">
-                <div class="blog__item__pic">
+          <div className="row">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="blog__item">
+                <div className="blog__item__pic">
                   <img src="img/blog/blog-1.jpg" alt="" />
                 </div>
-                <div class="blog__item__text">
+                <div className="blog__item__text">
                   <ul>
                     <li>
-                      <i class="fa fa-calendar-o"></i> May 4,2019
+                      <i className="fa fa-calendar-o"></i> May 4,2019
                     </li>
                     <li>
-                      <i class="fa fa-comment-o"></i> 5
+                      <i className="fa fa-comment-o"></i> 5
                     </li>
                   </ul>
                   <h5>
@@ -317,18 +229,18 @@ function BlogDetails() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="blog__item">
-                <div class="blog__item__pic">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="blog__item">
+                <div className="blog__item__pic">
                   <img src="img/blog/blog-2.jpg" alt="" />
                 </div>
-                <div class="blog__item__text">
+                <div className="blog__item__text">
                   <ul>
                     <li>
-                      <i class="fa fa-calendar-o"></i> May 4,2019
+                      <i className="fa fa-calendar-o"></i> May 4,2019
                     </li>
                     <li>
-                      <i class="fa fa-comment-o"></i> 5
+                      <i className="fa fa-comment-o"></i> 5
                     </li>
                   </ul>
                   <h5>
@@ -341,18 +253,18 @@ function BlogDetails() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="blog__item">
-                <div class="blog__item__pic">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="blog__item">
+                <div className="blog__item__pic">
                   <img src="img/blog/blog-3.jpg" alt="" />
                 </div>
-                <div class="blog__item__text">
+                <div className="blog__item__text">
                   <ul>
                     <li>
-                      <i class="fa fa-calendar-o"></i> May 4,2019
+                      <i className="fa fa-calendar-o"></i> May 4,2019
                     </li>
                     <li>
-                      <i class="fa fa-comment-o"></i> 5
+                      <i className="fa fa-comment-o"></i> 5
                     </li>
                   </ul>
                   <h5>

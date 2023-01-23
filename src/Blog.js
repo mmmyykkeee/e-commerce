@@ -1,111 +1,24 @@
 import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import Hero from "./Hero";
+
 
 function Blog() {
   return (
     <div>
       <Header />
-      <section class="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="hero__categories">
-                <div class="hero__categories__all">
-                  <i class="fa fa-bars"></i>
-                  <span>All Departments</span>
-                </div>
-                <ul>
-                  <li>
-                    <a href="#">Fresh Meat</a>
-                  </li>
-                  <li>
-                    <a href="#">Vegetables</a>
-                  </li>
-                  <li>
-                    <a href="#">Fruit & Nut Gifts</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Berries</a>
-                  </li>
-                  <li>
-                    <a href="#">Ocean Foods</a>
-                  </li>
-                  <li>
-                    <a href="#">Butter & Eggs</a>
-                  </li>
-                  <li>
-                    <a href="#">Fastfood</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Onion</a>
-                  </li>
-                  <li>
-                    <a href="#">Papayaya & Crisps</a>
-                  </li>
-                  <li>
-                    <a href="#">Oatmeal</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Bananas</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-9">
-              <div class="hero__search">
-                <div class="hero__search__form">
-                  <form action="#">
-                    <div class="hero__search__categories">
-                      All Categories
-                      <span class="arrow_carrot-down"></span>
-                    </div>
-                    <input
-                      type="text"
-                      placeholder="What are you looking for?"
-                    />
-                    <button type="submit" class="site-btn">
-                      SEARCH
-                    </button>
-                  </form>
-                </div>
-                <div class="hero__search__phone">
-                  <div class="hero__search__phone__icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <div class="hero__search__phone__text">
-                    <h5>704-768-7449</h5>
-                    <span>24/7 Support</span>
-                  </div>
-                </div>
-              </div>
-              <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
-                <div class="hero__text">
-                  <span>FRESH FRUIT</span>
-                  <h2>
-                    Vegetable <br />
-                    100% Organic
-                  </h2>
-                  <p>Free Pickup and Delivery Available</p>
-                  <a href="#" class="primary-btn">
-                    SHOP NOW
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
       <section
-        class="breadcrumb-section set-bg"
+        className="breadcrumb-section set-bg"
         data-setbg="img/breadcrumb.jpg"
       >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <div class="breadcrumb__text">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <div className="breadcrumb__text">
                 <h2>Blog</h2>
-                <div class="breadcrumb__option">
+                <div className="breadcrumb__option">
                   <a href="./index.html">Home</a>
                   <span>Blog</span>
                 </div>
@@ -114,20 +27,20 @@ function Blog() {
           </div>
         </div>
       </section>
-      <section class="blog spad">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-5">
-              <div class="blog__sidebar">
-                <div class="blog__sidebar__search">
+      <section className="blog spad">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-5">
+              <div className="blog__sidebar">
+                <div className="blog__sidebar__search">
                   <form action="#">
                     <input type="text" placeholder="Search..." />
                     <button type="submit">
-                      <span class="icon_search"></span>
+                      <span className="icon_search"></span>
                     </button>
                   </form>
                 </div>
-                <div class="blog__sidebar__item">
+                <div className="blog__sidebar__item">
                   <h4>Categories</h4>
                   <ul>
                     <li>
@@ -147,14 +60,14 @@ function Blog() {
                     </li>
                   </ul>
                 </div>
-                <div class="blog__sidebar__item">
+                <div className="blog__sidebar__item">
                   <h4>Recent News</h4>
-                  <div class="blog__sidebar__recent">
-                    <a href="#" class="blog__sidebar__recent__item">
-                      <div class="blog__sidebar__recent__item__pic">
+                  <div className="blog__sidebar__recent">
+                    <a href="#" className="blog__sidebar__recent__item">
+                      <div className="blog__sidebar__recent__item__pic">
                         <img src="img/blog/sidebar/sr-1.jpg" alt="" />
                       </div>
-                      <div class="blog__sidebar__recent__item__text">
+                      <div className="blog__sidebar__recent__item__text">
                         <h6>
                           09 Kinds Of Vegetables
                           <br /> Protect The Liver
@@ -162,11 +75,11 @@ function Blog() {
                         <span>MAR 05, 2019</span>
                       </div>
                     </a>
-                    <a href="#" class="blog__sidebar__recent__item">
-                      <div class="blog__sidebar__recent__item__pic">
+                    <a href="#" className="blog__sidebar__recent__item">
+                      <div className="blog__sidebar__recent__item__pic">
                         <img src="img/blog/sidebar/sr-2.jpg" alt="" />
                       </div>
-                      <div class="blog__sidebar__recent__item__text">
+                      <div className="blog__sidebar__recent__item__text">
                         <h6>
                           Tips You To Balance
                           <br /> Nutrition Meal Day
@@ -174,11 +87,11 @@ function Blog() {
                         <span>MAR 05, 2019</span>
                       </div>
                     </a>
-                    <a href="#" class="blog__sidebar__recent__item">
-                      <div class="blog__sidebar__recent__item__pic">
+                    <a href="#" className="blog__sidebar__recent__item">
+                      <div className="blog__sidebar__recent__item__pic">
                         <img src="img/blog/sidebar/sr-3.jpg" alt="" />
                       </div>
-                      <div class="blog__sidebar__recent__item__text">
+                      <div className="blog__sidebar__recent__item__text">
                         <h6>
                           4 Principles Help You Lose <br />
                           Weight With Vegetables
@@ -188,9 +101,9 @@ function Blog() {
                     </a>
                   </div>
                 </div>
-                <div class="blog__sidebar__item">
+                <div className="blog__sidebar__item">
                   <h4>Search By</h4>
-                  <div class="blog__sidebar__item__tags">
+                  <div className="blog__sidebar__item__tags">
                     <a href="#">Apple</a>
                     <a href="#">Beauty</a>
                     <a href="#">Vegetables</a>
@@ -201,20 +114,20 @@ function Blog() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-8 col-md-7">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="blog__item">
-                    <div class="blog__item__pic">
+            <div className="col-lg-8 col-md-7">
+              <div className="row">
+                <div className="col-lg-6 col-md-6 col-sm-6">
+                  <div className="blog__item">
+                    <div className="blog__item__pic">
                       <img src="img/blog/blog-2.jpg" alt="" />
                     </div>
-                    <div class="blog__item__text">
+                    <div className="blog__item__text">
                       <ul>
                         <li>
-                          <i class="fa fa-calendar-o"></i> May 4,2019
+                          <i className="fa fa-calendar-o"></i> May 4,2019
                         </li>
                         <li>
-                          <i class="fa fa-comment-o"></i> 5
+                          <i className="fa fa-comment-o"></i> 5
                         </li>
                       </ul>
                       <h5>
@@ -224,24 +137,24 @@ function Blog() {
                         Sed quia non numquam modi tempora indunt ut labore et
                         dolore magnam aliquam quaerat{" "}
                       </p>
-                      <a href="#" class="blog__btn">
-                        READ MORE <span class="arrow_right"></span>
+                      <a href="#" className="blog__btn">
+                        READ MORE <span className="arrow_right"></span>
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="blog__item">
-                    <div class="blog__item__pic">
+                <div className="col-lg-6 col-md-6 col-sm-6">
+                  <div className="blog__item">
+                    <div className="blog__item__pic">
                       <img src="img/blog/blog-3.jpg" alt="" />
                     </div>
-                    <div class="blog__item__text">
+                    <div className="blog__item__text">
                       <ul>
                         <li>
-                          <i class="fa fa-calendar-o"></i> May 4,2019
+                          <i className="fa fa-calendar-o"></i> May 4,2019
                         </li>
                         <li>
-                          <i class="fa fa-comment-o"></i> 5
+                          <i className="fa fa-comment-o"></i> 5
                         </li>
                       </ul>
                       <h5>
@@ -251,24 +164,24 @@ function Blog() {
                         Sed quia non numquam modi tempora indunt ut labore et
                         dolore magnam aliquam quaerat{" "}
                       </p>
-                      <a href="#" class="blog__btn">
-                        READ MORE <span class="arrow_right"></span>
+                      <a href="#" className="blog__btn">
+                        READ MORE <span className="arrow_right"></span>
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="blog__item">
-                    <div class="blog__item__pic">
+                <div className="col-lg-6 col-md-6 col-sm-6">
+                  <div className="blog__item">
+                    <div className="blog__item__pic">
                       <img src="img/blog/blog-1.jpg" alt="" />
                     </div>
-                    <div class="blog__item__text">
+                    <div className="blog__item__text">
                       <ul>
                         <li>
-                          <i class="fa fa-calendar-o"></i> May 4,2019
+                          <i className="fa fa-calendar-o"></i> May 4,2019
                         </li>
                         <li>
-                          <i class="fa fa-comment-o"></i> 5
+                          <i className="fa fa-comment-o"></i> 5
                         </li>
                       </ul>
                       <h5>
@@ -278,24 +191,24 @@ function Blog() {
                         Sed quia non numquam modi tempora indunt ut labore et
                         dolore magnam aliquam quaerat{" "}
                       </p>
-                      <a href="#" class="blog__btn">
-                        READ MORE <span class="arrow_right"></span>
+                      <a href="#" className="blog__btn">
+                        READ MORE <span className="arrow_right"></span>
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="blog__item">
-                    <div class="blog__item__pic">
+                <div className="col-lg-6 col-md-6 col-sm-6">
+                  <div className="blog__item">
+                    <div className="blog__item__pic">
                       <img src="img/blog/blog-4.jpg" alt="" />
                     </div>
-                    <div class="blog__item__text">
+                    <div className="blog__item__text">
                       <ul>
                         <li>
-                          <i class="fa fa-calendar-o"></i> May 4,2019
+                          <i className="fa fa-calendar-o"></i> May 4,2019
                         </li>
                         <li>
-                          <i class="fa fa-comment-o"></i> 5
+                          <i className="fa fa-comment-o"></i> 5
                         </li>
                       </ul>
                       <h5>
@@ -305,24 +218,24 @@ function Blog() {
                         Sed quia non numquam modi tempora indunt ut labore et
                         dolore magnam aliquam quaerat{" "}
                       </p>
-                      <a href="#" class="blog__btn">
-                        READ MORE <span class="arrow_right"></span>
+                      <a href="#" className="blog__btn">
+                        READ MORE <span className="arrow_right"></span>
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="blog__item">
-                    <div class="blog__item__pic">
+                <div className="col-lg-6 col-md-6 col-sm-6">
+                  <div className="blog__item">
+                    <div className="blog__item__pic">
                       <img src="img/blog/blog-4.jpg" alt="" />
                     </div>
-                    <div class="blog__item__text">
+                    <div className="blog__item__text">
                       <ul>
                         <li>
-                          <i class="fa fa-calendar-o"></i> May 4,2019
+                          <i className="fa fa-calendar-o"></i> May 4,2019
                         </li>
                         <li>
-                          <i class="fa fa-comment-o"></i> 5
+                          <i className="fa fa-comment-o"></i> 5
                         </li>
                       </ul>
                       <h5>
@@ -334,24 +247,24 @@ function Blog() {
                         Sed quia non numquam modi tempora indunt ut labore et
                         dolore magnam aliquam quaerat{" "}
                       </p>
-                      <a href="#" class="blog__btn">
-                        READ MORE <span class="arrow_right"></span>
+                      <a href="#" className="blog__btn">
+                        READ MORE <span className="arrow_right"></span>
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="blog__item">
-                    <div class="blog__item__pic">
+                <div className="col-lg-6 col-md-6 col-sm-6">
+                  <div className="blog__item">
+                    <div className="blog__item__pic">
                       <img src="img/blog/blog-6.jpg" alt="" />
                     </div>
-                    <div class="blog__item__text">
+                    <div className="blog__item__text">
                       <ul>
                         <li>
-                          <i class="fa fa-calendar-o"></i> May 4,2019
+                          <i className="fa fa-calendar-o"></i> May 4,2019
                         </li>
                         <li>
-                          <i class="fa fa-comment-o"></i> 5
+                          <i className="fa fa-comment-o"></i> 5
                         </li>
                       </ul>
                       <h5>
@@ -361,19 +274,19 @@ function Blog() {
                         Sed quia non numquam modi tempora indunt ut labore et
                         dolore magnam aliquam quaerat{" "}
                       </p>
-                      <a href="#" class="blog__btn">
-                        READ MORE <span class="arrow_right"></span>
+                      <a href="#" className="blog__btn">
+                        READ MORE <span className="arrow_right"></span>
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="product__pagination blog__pagination">
+                <div className="col-lg-12">
+                  <div className="product__pagination blog__pagination">
                     <a href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">
-                      <i class="fa fa-long-arrow-right"></i>
+                      <i className="fa fa-long-arrow-right"></i>
                     </a>
                   </div>
                 </div>
