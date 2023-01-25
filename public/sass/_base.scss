@@ -64,7 +64,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
-  color: Kshs. white-color;
+  color: $white-color;
 }
 
 ul,
@@ -79,7 +79,7 @@ ol {
   text-align: center;
 
   h2 {
-    color: Kshs. normal-color;
+    color: $normal-color;
     font-weight: 700;
     position: relative;
 
@@ -90,7 +90,7 @@ ol {
       right: 0;
       height: 4px;
       width: 80px;
-      background: Kshs. primary-color;
+      background: $primary-color;
       content: "";
       margin: 0 auto;
     }
@@ -127,21 +127,21 @@ ol {
   display: inline-block;
   font-size: 14px;
   padding: 10px 28px 10px;
-  color: Kshs. white-color;
+  color: $white-color;
   text-transform: uppercase;
   font-weight: 700;
-  background: Kshs. primary-color;
+  background: $primary-color;
   letter-spacing: 2px;
 }
 
 .site-btn {
   font-size: 14px;
-  color: Kshs. white-color;
+  color: $white-color;
   font-weight: 800;
   text-transform: uppercase;
   display: inline-block;
   padding: 13px 30px 12px;
-  background: Kshs. primary-color;
+  background: $primary-color;
   border: none;
 }
 

@@ -9,11 +9,11 @@
 
   span {
     font-size: 36px;
-    color: Kshs. primary-color;
+    color: $primary-color;
   }
 
   h4 {
-    color: Kshs. normal-color;
+    color: $normal-color;
     font-weight: 700;
     margin-bottom: 6px;
     margin-top: 18px;
@@ -46,7 +46,7 @@
 
 .map .map-inside i {
   font-size: 48px;
-  color: Kshs. primary-color;
+  color: $primary-color;
   position: absolute;
   bottom: -75px;
   left: 50%;
@@ -82,7 +82,7 @@
 .map .map-inside .inside-widget h4 {
   font-size: 22px;
   font-weight: 700;
-  color: Kshs. normal-color;
+  color: $normal-color;
   margin-bottom: 4px;
 }
 
@@ -99,7 +99,7 @@
   text-align: center;
 
   h2 {
-    color: Kshs. normal-color;
+    color: $normal-color;
     font-weight: 700;
   }
 }
@@ -114,14 +114,14 @@
       width: 100%;
       height: 50px;
       font-size: 16px;
-      color: Kshs. para-color;
+      color: $para-color;
       padding-left: 20px;
       margin-bottom: 30px;
-      border: 1px solid Kshs. border;
+      border: 1px solid $border;
       border-radius: 4px;
 
       &::placeholder {
-        color: Kshs. para-color;
+        color: $para-color;
       }
     }
 
@@ -129,16 +129,16 @@
       width: 100%;
       height: 150px;
       font-size: 16px;
-      color: Kshs. para-color;
+      color: $para-color;
       padding-left: 20px;
       margin-bottom: 24px;
-      border: 1px solid Kshs. border;
+      border: 1px solid $border;
       border-radius: 4px;
       padding-top: 12px;
       resize: none;
 
       &::placeholder {
-        color: Kshs. para-color;
+        color: $para-color;
       }
     }
 

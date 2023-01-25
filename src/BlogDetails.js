@@ -6,7 +6,6 @@ import Hero from "./Hero";
 function BlogDetails() {
   return (
     <div>
-      <Header />
       <Hero />
 
       <section

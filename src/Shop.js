@@ -4,9 +4,9 @@ import Header from "./Header";
 import Hero from "./Hero";
 
 function Shop() {
+  
   return (
     <div>
-      <Header />
       <Hero />
       <section
         className="breadcrumb-section set-bg"
@@ -16,7 +16,7 @@ function Shop() {
           <div className="row">
             <div className="col-lg-12 text-center">
               <div className="breadcrumb__text">
-                <h2>Ogani Shop</h2>
+                <h2>Mama Mboga Shop</h2>
                 <div className="breadcrumb__option">
                   <a href="./index.html">Home</a>
                   <span>Shop</span>
@@ -85,14 +85,15 @@ function Shop() {
                       ></span>
                     </div>
                     <div className="range-slider">
-                      <div className="price-input">
-                        <input type="text" id="minamount" />
-                        <input type="text" id="maxamount" />
+                      <div className="price-input px-2">
+                        <input className="border" type="text" id="minamount" />
+                        -
+                        <input className="border" type="text" id="maxamount" />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="sidebar__item sidebar__item__color--option">
+                {/* <div className="sidebar__item sidebar__item__color--option">
                   <h4>Colors</h4>
                   <div className="sidebar__item__color sidebar__item__color--white">
                     <label for="white">
@@ -130,7 +131,7 @@ function Shop() {
                       <input type="radio" id="green" />
                     </label>
                   </div>
-                </div>
+                </div> */}
                 <div className="sidebar__item">
                   <h4>Popular Size</h4>
                   <div className="sidebar__item__size">
@@ -479,9 +480,9 @@ function Shop() {
                   <div className="col-lg-4 col-md-5">
                     <div className="filter__sort">
                       <span>Sort By</span>
-                      <select>
-                        <option value="0">Default</option>
-                        <option value="0">Default</option>
+                      <select className="mx-3">
+                        <option value="0">Latest</option>
+                        <option value="0">Price</option>
                       </select>
                     </div>
                   </div>

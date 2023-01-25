@@ -26,7 +26,6 @@ function Upload() {
 
     return (
         <div>
-            <Header />
         <form onSubmit={handleSubmit} className="mx-auto text-center mt-5 mb-5">
           <input
             type="file"

@@ -14,13 +14,13 @@
         thead {
 
             tr {
-                border-bottom: 1px solid Kshs. border;
+                border-bottom: 1px solid $border;
             }
 
             th {
                 font-size: 20px;
                 font-weight: 700;
-                color: Kshs. normal-color;
+                color: $normal-color;
                 padding-bottom: 20px;
 
                 &.shoping__product {
@@ -36,7 +36,7 @@
                 td {
                     padding-top: 30px;
                     padding-bottom: 30px;
-                    border-bottom: 1px solid Kshs. border;
+                    border-bottom: 1px solid $border;
 
                     &.shoping__cart__item {
                         width: 630px;
@@ -48,21 +48,21 @@
                         }
 
                         h5 {
-                            color: Kshs. normal-color;
+                            color: $normal-color;
                             display: inline-block;
                         }
                     }
 
                     &.shoping__cart__price {
                         font-size: 18px;
-                        color: Kshs. normal-color;
+                        color: $normal-color;
                         font-weight: 700;
                         width: 100px;
                     }
 
                     &.shoping__cart__total {
                         font-size: 18px;
-                        color: Kshs. normal-color;
+                        color: $normal-color;
                         font-weight: 700;
                         width: 110px;
                     }
@@ -85,10 +85,10 @@
                             height: 40px;
 
                             input {
-                                color: Kshs. normal-color;
+                                color: $normal-color;
 
                                 &::placeholder {
-                                    color: Kshs. normal-color;
+                                    color: $normal-color;
                                 }
                             }
 
@@ -104,9 +104,9 @@
 }
 
 .primary-btn.cart-btn {
-    color: Kshs. para-color;
+    color: $para-color;
     padding: 14px 30px 12px;
-    background: Kshs. background;
+    background: $background;
 
     span {
         font-size: 14px;
@@ -124,7 +124,7 @@
 
     h5 {
         font-size: 20px;
-        color: Kshs. normal-color;
+        color: $normal-color;
         font-weight: 700;
         margin-bottom: 25px;
     }
@@ -150,19 +150,19 @@
             padding: 15px 30px 11px;
             font-size: 12px;
             letter-spacing: 4px;
-            background: Kshs. para-color;
+            background: $para-color;
         }
     }
 }
 
 .shoping__checkout {
-    background: Kshs. background;
+    background: $background;
     padding: 30px;
     padding-top: 20px;
     margin-top: 50px;
 
     h5 {
-        color: Kshs. normal-color;
+        color: $normal-color;
         font-weight: 700;
         font-size: 20px;
         margin-bottom: 28px;
@@ -173,11 +173,11 @@
 
         li {
             font-size: 16px;
-            color: Kshs. normal-color;
+            color: $normal-color;
             font-weight: 700;
             list-style: none;
             overflow: hidden;
-            border-bottom: 1px solid Kshs. border;
+            border-bottom: 1px solid $border;
             padding-bottom: 13px;
             margin-bottom: 18px;
 

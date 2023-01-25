@@ -29,7 +29,6 @@ const Login = () => {
 
     return (
         <div>
-            <Header />
         <form className="login-form" onSubmit={handleSubmit}>
           {!isLogin && (
             <input

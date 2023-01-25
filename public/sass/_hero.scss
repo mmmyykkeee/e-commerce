@@ -14,7 +14,7 @@
                 top: 46px;
                 width: 100%;
                 z-index: 9;
-                background: Kshs. white-color;
+                background: $white-color;
             }
         }
 
@@ -25,21 +25,21 @@
 }
 
 .hero__categories__all {
-    background: Kshs. primary-color;
+    background: $primary-color;
     position: relative;
     padding: 10px 25px 10px 40px;
     cursor: pointer;
 
     i {
         font-size: 16px;
-        color: Kshs. white-color;
+        color: $white-color;
         margin-right: 10px;
     }
 
     span {
         font-size: 18px;
         font-weight: 700;
-        color: Kshs. white-color;
+        color: $white-color;
     }
 
     &:after {
@@ -49,14 +49,14 @@
         content: '\33';
         font-family: 'ElegantIcons';
         font-size: 18px;
-        color: Kshs. white-color;
+        color: $white-color;
     }
 }
 
 .hero__categories {
 
     ul {
-        border: 1px solid Kshs. border;
+        border: 1px solid $border;
         padding-left: 40px;
         padding-top: 10px;
         padding-bottom: 12px;
@@ -66,7 +66,7 @@
 
             a {
                 font-size: 16px;
-                color: Kshs. normal-color;
+                color: $normal-color;
                 line-height: 39px;
                 display: block;
             }
@@ -82,7 +82,7 @@
 .hero__search__form {
     width: 610px;
     height: 50px;
-    border: 1px solid Kshs. border;
+    border: 1px solid $border;
     position: relative;
     float: left;
 
@@ -92,7 +92,7 @@
             width: 30%;
             float: left;
             font-size: 16px;
-            color: Kshs. normal-color;
+            color: $normal-color;
             font-weight: 700;
             padding-left: 18px;
             padding-top: 11px;
@@ -105,7 +105,7 @@
                 top: 14px;
                 height: 20px;
                 width: 1px;
-                background: Kshs. black-color;
+                background: $black-color;
                 opacity: .1;
                 content: "";
             }
@@ -145,10 +145,10 @@
 
 .hero__search__phone__icon {
     font-size: 18px;
-    color: Kshs. primary-color;
+    color: $primary-color;
     height: 50px;
     width: 50px;
-    background: Kshs. background;
+    background: $background;
     line-height: 50px;
     text-align: center;
     border-radius: 50%;
@@ -160,14 +160,14 @@
     overflow: hidden;
 
     h5 {
-        color: Kshs. normal-color;
+        color: $normal-color;
         font-weight: 700;
         margin-bottom: 5px;
     }
 
     span {
         font-size: 14px;
-        color: Kshs. para-color;
+        color: $para-color;
     }
 }
 
@@ -186,12 +186,12 @@
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 4px;
-        color: Kshs. primary-color;
+        color: $primary-color;
     }
 
     h2 {
         font-size: 46px;
-        color: Kshs. heading-color-2;
+        color: $heading-color-2;
         line-height: 52px;
         font-weight: 700;
         margin: 10px 0;

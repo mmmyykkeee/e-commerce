@@ -25,7 +25,7 @@
 .product__details__text {
 
     h3 {
-        color: Kshs. heading-color-2;
+        color: $heading-color-2;
         font-weight: 700;
         margin-bottom: 16px;
     }
@@ -65,19 +65,19 @@
     .heart-icon {
         display: inline-block;
         font-size: 16px;
-        color: Kshs. para-color;
+        color: $para-color;
         padding: 13px 16px 13px;
-        background: Kshs. background;
+        background: $background;
     }
 
     ul {
-        border-top: 1px solid Kshs. border;
+        border-top: 1px solid $border;
         padding-top: 40px;
         margin-top: 50px;
 
         li {
             font-size: 16px;
-            color: Kshs. normal-color;
+            color: $normal-color;
             list-style: none;
             line-height: 36px;
 
@@ -100,7 +100,7 @@
                 a {
                     display: inline-block;
                     font-size: 15px;
-                    color: Kshs. normal-color;
+                    color: $normal-color;
                     margin-right: 25px;
 
                     &:last-child {
@@ -123,24 +123,24 @@
     display: inline-block;
     position: relative;
     text-align: center;
-    background: Kshs. background;
+    background: $background;
     margin-bottom: 5px;
 
     input {
         height: 100%;
         width: 100%;
         font-size: 16px;
-        color: Kshs. para-color;
+        color: $para-color;
         width: 50px;
         border: none;
-        background: Kshs. background;
+        background: $background;
         text-align: center;
     }
 
     .qtybtn {
         width: 35px;
         font-size: 16px;
-        color: Kshs. para-color;
+        color: $para-color;
         cursor: pointer;
         display: inline-block;
     }
@@ -160,7 +160,7 @@
             top: 12px;
             height: 1px;
             width: 370px;
-            background: Kshs. border;
+            background: $border;
             content: '';
         }
 
@@ -170,7 +170,7 @@
             top: 12px;
             height: 1px;
             width: 370px;
-            background: Kshs. border;
+            background: $border;
             content: '';
         }
 

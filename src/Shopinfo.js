@@ -5,7 +5,6 @@ import Header from "./Header";
 function Shopinfo() {
   return (
     <div>
-      <Header />
 
       <section
         className="breadcrumb-section set-bg"

@@ -6,8 +6,6 @@ import Hero from "./Hero";
 function Checkout() {
   return (
     <div>
-      <Header />
-      <Hero />
       <section
         className="breadcrumb-section set-bg"
         data-setbg="img/breadcrumb.jpg"

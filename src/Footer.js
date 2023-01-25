@@ -10,13 +10,13 @@ function Footer() {
               <div className="footer__about">
                 <div className="footer__about__logo">
                   <a href="./index.html">
-                    <img src="img/logo.png" alt="" />
+                    <img src="img/logo.png" alt="" className="w-2" />
                   </a>
                 </div>
                 <ul>
                   <li>Address: 1317 Harry Place 28204 NC</li>
                   <li>Phone: 704-768-7449</li>
-                  <li>Email: info@ogani.com</li>
+                  <li>Email: info@Mama Mboga.com</li>
                 </ul>
               </div>
             </div>

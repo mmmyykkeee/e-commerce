@@ -7,7 +7,6 @@ import Hero from "./Hero";
 function Blog() {
   return (
     <div>
-      <Header />
       <Hero />
       <section
         className="breadcrumb-section set-bg"

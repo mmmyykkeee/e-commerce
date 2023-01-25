@@ -6,8 +6,6 @@ import Hero from "./Hero";
 function Contact() {
   return (
     <div>
-      <Header />
-      <Hero />
       <section
         className="breadcrumb-section set-bg"
         data-setbg="img/breadcrumb.jpg"
@@ -54,7 +52,7 @@ function Contact() {
               <div className="contact__widget">
                 <span className="icon_mail_alt"></span>
                 <h4>Email</h4>
-                <p>info@ogami.com</p>
+                <p>info@mamamboga.com</p>
               </div>
             </div>
           </div>

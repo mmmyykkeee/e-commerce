@@ -6,8 +6,7 @@ import Hero from "./Hero";
 function ShoppingCart() {
   return (
     <div>
-      <Header />
-      <Hero />
+      
       <section className="shoping-cart spad">
         <div className="container">
           <div className="row">

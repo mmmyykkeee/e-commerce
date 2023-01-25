@@ -10,7 +10,7 @@
 
     h2 {
         font-size: 46px;
-        color: Kshs. white-color;
+        color: $white-color;
         font-weight: 700;
         margin-bottom: 10px;
     }
@@ -19,7 +19,7 @@
 
         li {
             font-size: 16px;
-            color: Kshs. white-color;
+            color: $white-color;
             list-style: none;
             display: inline-block;
             margin-right: 45px;
@@ -94,13 +94,13 @@
     padding-top: 30px;
 
     h6 {
-        color: Kshs. normal-color;
+        color: $normal-color;
         font-weight: 700;
     }
 
     span {
         font-size: 16px;
-        color: Kshs. para-color;
+        color: $para-color;
     }
 }
 
@@ -111,12 +111,12 @@
 
         li {
             font-size: 16px;
-            color: Kshs. para-color;
+            color: $para-color;
             list-style: none;
             line-height: 30px;
 
             span {
-                color: Kshs. normal-color;
+                color: $normal-color;
                 font-weight: 700;
             }
         }
@@ -127,12 +127,12 @@
         a {
             display: inline-block;
             font-size: 20px;
-            color: Kshs. para-color;
+            color: $para-color;
             margin-right: 24px;
             @include transition(all, .3s);
 
             &:hover {
-                color: Kshs. primary-color;
+                color: $primary-color;
             }
 
             &:last-child {

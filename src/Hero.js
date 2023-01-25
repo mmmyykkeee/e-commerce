@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Route, Routes, Link } from "react-router-dom";
+import Shop from "./Shop";
 
 function Hero() {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+  const handleMenuButtonClick = () => {
+    setIsMenuVisible(!isMenuVisible);
+  };
+
   return (
     <div>
       <section className="hero">
@@ -8,11 +16,11 @@ function Hero() {
           <div className="row">
             <div className="col-lg-3">
               <div className="hero__categories">
-                <div className="hero__categories__all">
-                  <i className="fa fa-bars toggle"></i>
+                <div className="hero__categories__all" onClick={handleMenuButtonClick}>
+                  <i className="fa fa-bars"></i>
                   <span>All Departments</span>
                 </div>
-                <ul>
+                <ul style={{ display: isMenuVisible ? "none" : "block" }}>
                   <li>
                     <a href="#">Fresh Meat</a>
                   </li>
@@ -87,17 +95,29 @@ function Hero() {
                     100% Organic
                   </h2>
                   <p>Free Pickup and Delivery Available</p>
-                  <a href="#" className="primary-btn">
+                  <Link to="/Shop" className="primary-btn">
                     SHOP NOW
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <Routes>
+          <Route path="/Shop" element={<Shop /> } />
+        </Routes>
       </section>
     </div>
   );
 }
 
-export default Hero
+export default Hero;
+
+           
+
+
+
+
+
+
+

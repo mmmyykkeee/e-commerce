@@ -6,7 +6,7 @@
     h6 {
         color: #999999;
         text-align: center;
-        background: Kshs. background;
+        background: $background;
         border-top: 1px solid #6AB963;
         padding: 12px 0 12px;
         margin-bottom: 75px;
@@ -27,7 +27,7 @@
 .checkout__form {
 
     h4 {
-        color: Kshs. normal-color;
+        color: $normal-color;
         font-weight: 700;
         border-bottom: 1px solid #e1e1e1;
         padding-bottom: 20px;
@@ -43,7 +43,7 @@
     margin-bottom: 24px;
 
     p {
-        color: Kshs. normal-color;
+        color: $normal-color;
         margin-bottom: 20px;
 
         span {
@@ -54,7 +54,7 @@
     input {
         width: 100%;
         height: 46px;
-        border: 1px solid Kshs. border;
+        border: 1px solid $border;
         padding-left: 20px;
         font-size: 16px;
         color: #b2b2b2;
@@ -76,7 +76,7 @@
     label {
         position: relative;
         font-size: 16px;
-        color: Kshs. normal-color;
+        color: $normal-color;
         padding-left: 40px;
         cursor: pointer;
 
@@ -87,8 +87,8 @@
             &:checked {
 
                 &~.checkmark {
-                    background: Kshs. primary-color;
-                    border-color: Kshs. primary-color;
+                    background: $primary-color;
+                    border-color: $primary-color;
 
                     &:after {
                         opacity: 1;
@@ -126,12 +126,12 @@
 }
 
 .checkout__order {
-    background: Kshs. background;
+    background: $background;
     padding: 40px;
     padding-top: 30px;
 
     h4 {
-        color: Kshs. normal-color;
+        color: $normal-color;
         font-weight: 700;
         border-bottom: 1px solid #e1e1e1;
         padding-bottom: 20px;
@@ -140,7 +140,7 @@
 
     .checkout__order__products {
         font-size: 18px;
-        color: Kshs. normal-color;
+        color: $normal-color;
         font-weight: 700;
         margin-bottom: 10px;
 
@@ -154,7 +154,7 @@
 
         li {
             font-size: 16px;
-            color: Kshs. para-color;
+            color: $para-color;
             line-height: 40px;
             list-style: none;
 
@@ -167,7 +167,7 @@
 
     .checkout__order__subtotal {
         font-size: 18px;
-        color: Kshs. normal-color;
+        color: $normal-color;
         font-weight: 700;
         border-bottom: 1px solid #e1e1e1;
         border-top: 1px solid #e1e1e1;
@@ -189,7 +189,7 @@
 
     .checkout__order__total {
         font-size: 18px;
-        color: Kshs. normal-color;
+        color: $normal-color;
         font-weight: 700;
         border-bottom: 1px solid #e1e1e1;
         padding-bottom: 15px;

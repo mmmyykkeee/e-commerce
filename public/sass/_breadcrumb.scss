@@ -9,7 +9,7 @@
 
     h2 {
         font-size: 46px;
-        color: Kshs. white-color;
+        color: $white-color;
         font-weight: 700;
     }
 }
@@ -19,7 +19,7 @@
     a {
         display: inline-block;
         font-size: 16px;
-        color: Kshs. white-color;
+        color: $white-color;
         font-weight: 700;
         margin-right: 20px;
         position: relative;
@@ -30,7 +30,7 @@
             top: 13px;
             height: 1px;
             width: 10px;
-            background: Kshs. white-color;
+            background: $white-color;
             content: '';
         }
     }
@@ -38,6 +38,6 @@
     span {
         display: inline-block;
         font-size: 16px;
-        color: Kshs. white-color;
+        color: $white-color;
     }
 }
