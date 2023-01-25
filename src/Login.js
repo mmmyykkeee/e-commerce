@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import {Link, Routes, Route} from "react-router-dom"
 import Header from "./Header"
 import Footer from "./Footer";
 import "./App.css";
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
-  const [username, setUsername] = useState("");
+  const [phonenumber, setPhoneNumber] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (event) => {
@@ -13,12 +14,12 @@ const Login = () => {
     if (isLogin) {
       // Code to handle login
       console.log(
-        `Logging in with username: ${username} and password: ${password}`
+        `Logging in with Phone Number: ${phonenumber} and password: ${password}`
       );
     } else {
       // Code to handle registration
       console.log(
-        `Registering with username: ${username} and password: ${password}`
+        `Registering with Phone Number: ${phonenumber} and password: ${password}`
       );
     }
   };
@@ -28,22 +29,22 @@ const Login = () => {
   };
 
     return (
-        <div>
+      <div>
         <form className="login-form" onSubmit={handleSubmit}>
           {!isLogin && (
             <input
               type="text"
               placeholder="Name"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              value={phonenumber=""}
+              onChange={(e) => setPhoneNumber(e.target.value)}
               required
             />
           )}
           <input
             type="text"
-            placeholder={isLogin ? "Username" : "Email"}
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            placeholder={isLogin ? "+254 701 234 567" : "Email"}
+            value={phonenumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
             required
           />
           <input
@@ -54,11 +55,14 @@ const Login = () => {
             required
           />
           <button type="submit">{isLogin ? "Log In" : "Register"}</button>
-          <button type="button" onClick={toggleForm}>
-            {isLogin ? "Create an account" : "Already have an account?"}
-          </button>
-            </form>
-            <Footer />
+
+          <Link to="/Register">
+            <button type="button">
+              Create an Account
+            </button>
+          </Link>
+        </form>
+        <Footer />
       </div>
     );
 };

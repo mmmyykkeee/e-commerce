@@ -12,6 +12,7 @@ import BlogDetails from "./BlogDetails";
 import Contact from "./Contact";
 import Upload from "./Upload";
 import Login from "./Login";
+import Register from "./Register";
 
 function Header() {
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
@@ -24,10 +25,11 @@ function Header() {
     Swal.fire({
       title: "Please log in to continue",
       html:
-        '<a href="#" class="btn btn-primary mr-2">Log in with Facebook</a>' +
-        '<a href="#" class="btn btn-danger">Log in with Google</a>',
+        '<a href="https://www.facebook.com/v8.0/dialog/oauth" class="btn btn-primary mr-2">Log in with Facebook</a>' +
+        '<a href="https://accounts.google.com/o/oauth2/auth" class="btn btn-danger">Log in with Google</a>' +
+        '<a href="/Register" class="btn btn-success mt-2">Login With Phone Number</a>',
       showCancelButton: true,
-      confirmButtonText: "Cancel",
+      confirmButtonText: "Exit",
       onClose: () => setShowLoginPrompt(false),
     });
   }
@@ -43,7 +45,7 @@ function Header() {
                   <div className="header__top__left">
                     <ul>
                       <li>
-                        <i className="fa fa-envelope"></i> example@domain.com |
+                        <i className="fa fa-envelope"></i> example@domain.com 
                       </li>
                       <li>Buy and Sell Agricultural Products</li>
                     </ul>
@@ -72,14 +74,14 @@ function Header() {
                         </li>
                       </ul>
                     </div>
-                    <div className="header__top__right__auth mx-2 px-2 border btn btn-primary">
+                    <div className="header__top__right__auth mx-2 px-2 border btn btn-success">
                       <Link to="/Login">
                         <i className="fa fa-user "></i> Login
                       </Link>
                     </div>
                     |
-                    <div className="header__top__right__auth mx-2 border px-2 btn btn-primary">
-                      <Link to="/Login">
+                    <div className="header__top__right__auth mx-2 border px-2 btn btn-success">
+                      <Link to="/Register">
                         <i className="fa fa-user "></i> Register
                       </Link>
                     </div>
@@ -107,7 +109,7 @@ function Header() {
               <div className="col-lg-6">
                 <nav className="header__menu">
                   <ul>
-                    <li className="active">
+                    <li className="actives">
                       <Link to="/">Home</Link>
                     </li>
                     <li>
@@ -175,6 +177,7 @@ function Header() {
         <Route path="/Blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
       </Routes>
     </header>
   );

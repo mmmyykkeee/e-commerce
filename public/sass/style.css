@@ -413,10 +413,13 @@ ol {
   padding: 5px 15px;
 }
 
-.header__menu ul li.active a {
+/* .header__menu ul li.active a {
   color: #00b53f;
+} */
+.actives:visited{
+  color: #00b53f;
+  
 }
-
 .header__menu ul li:hover .header__menu__dropdown {
   top: 30px;
   opacity: 1;

@@ -79,6 +79,12 @@ ol {
   margin: 0;
 }
 
+.button-container{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
 section {
   min-height: max-content;
   overflow: hidden;

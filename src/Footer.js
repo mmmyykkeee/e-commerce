@@ -80,17 +80,17 @@ function Footer() {
                   </button>
                 </form>
                 <div className="footer__widget__social">
-                  <a href="#">
-                    <i className="bi bi facebook"></i>
+                  <a href="https://www.facebook.com">
+                    <i className="bi bi-facebook"></i>
                   </a>
-                  <a href="#">
-                    <i className="bi bi instagram"></i>
+                  <a href="https://www.facebook.com">
+                    <i className="bi bi-messenger"></i>
                   </a>
-                  <a href="#">
-                    <i className="bi bi twitter"></i>
+                  <a href="https://www.twitter.com">
+                    <i className="bi bi-twitter"></i>
                   </a>
-                  <a href="#">
-                    <i className="bi bi pinterest"></i>
+                  <a href="https://web.whatsapp.com">
+                    <i className="bi bi-whatsapp"></i>
                   </a>
                 </div>
               </div>
