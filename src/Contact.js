@@ -38,14 +38,14 @@ function Contact() {
               <div className="contact__widget">
                 <span className="icon_pin_alt"></span>
                 <h4>Address</h4>
-                <p>1317 Harry Place 28204 NC</p>
+                <p>Membley, Nairobi</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 text-center">
               <div className="contact__widget">
                 <span className="icon_clock_alt"></span>
                 <h4>Open time</h4>
-                <p>10:00 am - 23:00 pm</p>
+                <p>Available 24/7</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-6 text-center">

@@ -5,7 +5,6 @@ import Header from "./Header";
 function Shopinfo() {
   return (
     <div>
-
       <section
         className="breadcrumb-section set-bg"
         data-setbg="img/breadcrumb.jpg"
@@ -73,7 +72,7 @@ function Shopinfo() {
                   <i className="fa fa-star-half-o"></i>
                   <span>(18 reviews)</span>
                 </div>
-                <div className="product__details__price">$50.00</div>
+                <div className="product__details__price">Kshs.50.00</div>
                 <p>
                   Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
                   Vestibulum ac diam sit amet quam vehicula elementum sed sit
@@ -275,7 +274,7 @@ function Shopinfo() {
                   <h6>
                     <a href="javascript:void(0);">1</a>
                   </h6>
-                  <h5>$30.00</h5>
+                  <h5>Kshs.30.00</h5>
                 </div>
               </div>
             </div>
@@ -310,7 +309,7 @@ function Shopinfo() {
                   <h6>
                     <a href="javascript:void(0);">2</a>
                   </h6>
-                  <h5>$30.00</h5>
+                  <h5>Kshs.30.00</h5>
                 </div>
               </div>
             </div>
@@ -345,7 +344,7 @@ function Shopinfo() {
                   <h6>
                     <a href="javascript:void(0);">3</a>
                   </h6>
-                  <h5>$30.00</h5>
+                  <h5>Kshs.30.00</h5>
                 </div>
               </div>
             </div>
@@ -380,7 +379,7 @@ function Shopinfo() {
                   <h6>
                     <a href="javascript:void(0);">4</a>
                   </h6>
-                  <h5>$30.00</h5>
+                  <h5>Kshs.30.00</h5>
                 </div>
               </div>
             </div>

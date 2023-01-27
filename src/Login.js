@@ -30,12 +30,16 @@ const Login = () => {
 
     return (
       <div>
+        <h2 className="container text-center font-weight-bold">
+          Log in to continue
+        </h2>
+        <br/>
         <form className="login-form" onSubmit={handleSubmit}>
           {!isLogin && (
             <input
               type="text"
               placeholder="Name"
-              value={phonenumber=""}
+              value={(phonenumber = "")}
               onChange={(e) => setPhoneNumber(e.target.value)}
               required
             />
@@ -57,9 +61,7 @@ const Login = () => {
           <button type="submit">{isLogin ? "Log In" : "Register"}</button>
 
           <Link to="/Register">
-            <button type="button">
-              Create an Account
-            </button>
+            <button type="button">Create an Account</button>
           </Link>
         </form>
         <Footer />

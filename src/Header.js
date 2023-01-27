@@ -13,9 +13,29 @@ import Contact from "./Contact";
 import Upload from "./Upload";
 import Login from "./Login";
 import Register from "./Register";
+import Chat from './Chat';
+import { Button } from "react-bootstrap";
 
 function Header() {
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
+
+  // const handleExit = () => {
+  //   Swal({
+  //     title: "Are you sure?",
+  //     text: "Once deleted, you will not be able to recover this imaginary file!",
+  //     icon: "warning",
+  //     buttons: true,
+  //     dangerMode: true,
+  //   }).then((willDelete) => {
+  //     if (willDelete) {
+  //       Swal("Poof! Your imaginary file has been deleted!", {
+  //         icon: "success",
+  //       });
+  //     } else {
+  //       Swal("Your imaginary file is safe!");
+  //     }
+  //   });
+  // }
 
   const handleSellButtonClick = () => {
     setShowLoginPrompt(true);
@@ -25,9 +45,9 @@ function Header() {
     Swal.fire({
       title: "Please log in to continue",
       html:
-        '<a href="https://www.facebook.com/v8.0/dialog/oauth" class="btn btn-primary mr-2">Log in with Facebook</a>' +
-        '<a href="https://accounts.google.com/o/oauth2/auth" class="btn btn-danger">Log in with Google</a>' +
-        '<a href="/Register" class="btn btn-success mt-2">Login With Phone Number</a>',
+        '<a href="https://www.facebook.com/v8.0/dialog/oauth" class="btn btn-primary bi bi-facebook mx-2 mr-2">Log in with Facebook</a>' +
+        '<a href="https://accounts.google.com/o/oauth2/auth" class="btn btn-danger bi bi-google mx-2">Log in with Google</a>' +
+        '<a href="/Register" class="btn btn-success bi bi-telephone-inbound-fill mr-4 mt-2">Login With Phone Number</a>',
       showCancelButton: true,
       confirmButtonText: "Exit",
       onClose: () => setShowLoginPrompt(false),
@@ -36,7 +56,7 @@ function Header() {
 
   return (
     <header>
-      <div className="container">
+      <div className="container-fluid">
         <header className="header">
           <div className="header__top">
             <div className="container">
@@ -45,9 +65,13 @@ function Header() {
                   <div className="header__top__left">
                     <ul>
                       <li>
-                        <i className="fa fa-envelope"></i> example@domain.com 
+                        <i className="fa fa-envelope"></i> example@domain.com
                       </li>
                       <li>Buy and Sell Agricultural Products</li>
+                      <Link to="/Chat">
+                        <i class="bi bi-bell-fill mx-2 "></i>
+                        <span>3</span>
+                      </Link>
                     </ul>
                   </div>
                 </div>
@@ -60,19 +84,6 @@ function Header() {
                       <a href="https://www.twitter.com">
                         <i className="fa fa-twitter"></i>
                       </a>
-                    </div>
-                    <div className="header__top__right__language">
-                      <img src="img/language.png" alt="" />
-                      <div>English</div>
-                      <span className="arrow_carrot-down"></span>
-                      <ul>
-                        <li>
-                          <a href="#">Spanish</a>
-                        </li>
-                        <li>
-                          <a href="#">English</a>
-                        </li>
-                      </ul>
                     </div>
                     <div className="header__top__right__auth mx-2 px-2 border btn btn-success">
                       <Link to="/Login">
@@ -92,6 +103,9 @@ function Header() {
                     >
                       Sell
                     </button>
+                    {/* <Link to="/Upload">
+                      Upload
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -156,7 +170,7 @@ function Header() {
                     </li>
                   </ul>
                   <div className="header__cart__price">
-                    <span>$10.00</span>
+                    <span>Kshs. 10.00</span>
                   </div>
                 </div>
               </div>
@@ -178,6 +192,8 @@ function Header() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
+        <Route path="/Upload" element={<Upload />} />
+        <Route path="/Chat" element={<Chat />} />
       </Routes>
     </header>
   );

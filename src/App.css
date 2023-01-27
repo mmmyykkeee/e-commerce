@@ -58,6 +58,34 @@ p {
 img {
   max-width: 100%;
 }
+.messages{
+  box-shadow: 15px 40px 93px 26px rgba(0,0,0,0.1);
+  height: 70vh;
+  width: 70vw;
+  position: relative;
+  background-color: #c9c5c5;
+}
+
+.right-aside{
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #f0eded;
+
+}
+
+.top-bar{
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #b9b6b6;
+  height: 3.5em;
+}
+
+.text-area{
+  justify-content: center;
+  margin: 25% 0 0 45%;
+}
 
 input:focus,
 select:focus,
@@ -83,6 +111,13 @@ ol {
   display: flex;
   justify-content: space-around;
   
+}
+.buttons{
+  position: relative;
+}
+.btn-dangers{
+  position: absolute;
+  right:0px;
 }
 
 section {

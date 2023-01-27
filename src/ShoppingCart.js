@@ -6,7 +6,6 @@ import Hero from "./Hero";
 function ShoppingCart() {
   return (
     <div>
-      
       <section className="shoping-cart spad">
         <div className="container">
           <div className="row">
@@ -28,7 +27,7 @@ function ShoppingCart() {
                         <img src="img/cart/cart-1.jpg" alt="" />
                         <h5>Vegetable’s Package</h5>
                       </td>
-                      <td className="shoping__cart__price">$55.00</td>
+                      <td className="shoping__cart__price">Kshs. 55.00</td>
                       <td className="shoping__cart__quantity">
                         <div className="quantity">
                           <div className="pro-qty">
@@ -36,7 +35,7 @@ function ShoppingCart() {
                           </div>
                         </div>
                       </td>
-                      <td className="shoping__cart__total">$110.00</td>
+                      <td className="shoping__cart__total">Kshs. 110.00</td>
                       <td className="shoping__cart__item__close">
                         <span className="icon_close"></span>
                       </td>
@@ -46,7 +45,7 @@ function ShoppingCart() {
                         <img src="img/cart/cart-2.jpg" alt="" />
                         <h5>Fresh Garden Vegetable</h5>
                       </td>
-                      <td className="shoping__cart__price">$39.00</td>
+                      <td className="shoping__cart__price">Kshs. 39.00</td>
                       <td className="shoping__cart__quantity">
                         <div className="quantity">
                           <div className="pro-qty">
@@ -54,7 +53,7 @@ function ShoppingCart() {
                           </div>
                         </div>
                       </td>
-                      <td className="shoping__cart__total">$39.99</td>
+                      <td className="shoping__cart__total">Kshs. 39.99</td>
                       <td className="shoping__cart__item__close">
                         <span className="icon_close"></span>
                       </td>
@@ -64,7 +63,7 @@ function ShoppingCart() {
                         <img src="img/cart/cart-3.jpg" alt="" />
                         <h5>Organic Bananas</h5>
                       </td>
-                      <td className="shoping__cart__price">$69.00</td>
+                      <td className="shoping__cart__price">Kshs. 69.00</td>
                       <td className="shoping__cart__quantity">
                         <div className="quantity">
                           <div className="pro-qty">
@@ -72,7 +71,7 @@ function ShoppingCart() {
                           </div>
                         </div>
                       </td>
-                      <td className="shoping__cart__total">$69.99</td>
+                      <td className="shoping__cart__total">Kshs. 69.99</td>
                       <td className="shoping__cart__item__close">
                         <span className="icon_close"></span>
                       </td>
@@ -94,7 +93,7 @@ function ShoppingCart() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 border invisible">
               <div className="shoping__continue">
                 <div className="shoping__discount">
                   <h5>Discount Codes</h5>
@@ -112,10 +111,10 @@ function ShoppingCart() {
                 <h5>Cart Total</h5>
                 <ul>
                   <li>
-                    Subtotal <span>$454.98</span>
+                    Subtotal <span>Kshs. 454.98</span>
                   </li>
                   <li>
-                    Total <span>$454.98</span>
+                    Total <span>Kshs. 454.98</span>
                   </li>
                 </ul>
                 <a href="#" className="primary-btn">

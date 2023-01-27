@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, Routes, Route } from "react-router-dom"
 import Login from './Login'
 import { Form, InputGroup, FormControl, Button } from "react-bootstrap";
+import Footer from "./Footer";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -17,84 +18,97 @@ const Register = () => {
   };
 
   return (
-    <div className="register-form container">
-      <Form onSubmit={handleSubmit}>
-        <div className="d-flex">
-          <Form.Group className="col-sm-12 col-lg-6">
+    <div className="register-form">
+      <h2 className="container text-center font-weight-bold">
+        Log in to continue
+      </h2>
+      <br />
+      <div className="container">
+        <Form onSubmit={handleSubmit}>
+          <div className="d-flex">
+            <Form.Group className="col-sm-12 col-lg-6">
+              <Form.Label>
+                First Name <span className="text-danger">*</span>
+              </Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="First Name"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="col-sm-12 col-lg-6">
+              <Form.Label>
+                Last Name <span className="text-danger">*</span>
+              </Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Last Name"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
+            </Form.Group>
+          </div>
+          <div className="d-flex">
+            <Form.Group className="col-sm-12 col-lg-6">
+              <Form.Label>
+                Email <span className="text-danger">*</span>
+              </Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group className="col-sm-12 col-lg-6">
+              <Form.Label>
+                Password <span className="text-danger">*</span>{" "}
+              </Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </Form.Group>
+          </div>
+          <Form.Group className="col-lg-12">
             <Form.Label>
-              First Name <span className="text-danger">*</span>
+              Phone Number <span className="text-danger">*</span>
             </Form.Label>
             <Form.Control
-              type="text"
-              placeholder="First Name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-          </Form.Group>
-          <Form.Group className="col-sm-12 col-lg-6">
-            <Form.Label>
-              Last Name <span className="text-danger">*</span>
-            </Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Last Name"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-            />
-          </Form.Group>
-        </div>
-        <div className="d-flex">
-          <Form.Group className="col-sm-12 col-lg-6">
-            <Form.Label>
-              Email <span className="text-danger">*</span>
-            </Form.Label>
-            <Form.Control
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </Form.Group>
-          <Form.Group className="col-sm-12 col-lg-6">
-            <Form.Label>
-              Password <span className="text-danger">*</span>{" "}
-            </Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="Password"
-              value={password}
+              type="number"
+              placeholder="+254 701 234 567"
+              value={phonenumber}
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-        </div>
-        <Form.Group className="col-lg-12">
-          <Form.Label>
-            Phone Number <span className="text-danger">*</span>
-          </Form.Label>
-          <Form.Control
-            type="number"
-            placeholder="+254 701 234 567"
-            value={phonenumber}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </Form.Group>
-        <div className="container d-flex mt-2">
-          <span className="text-danger">*</span> <p>required</p>
-        </div>
-        <div className="button-container container">
-          <Button className="register-button" variant="success" type="submit">
-            Register
-          </Button>
-          <Link to="/Login">
+          <div className="container d-flex mt-2">
+            <span className="text-danger">*</span> <p>required</p>
+          </div>
+          <div className="button-container container">
             <Button className="register-button" variant="success" type="submit">
-              Already Have an Account?
+              Create Account
             </Button>
-          </Link>
-        </div>
-      </Form>
+            <Link to="/Login">
+              <Button
+                className="register-button"
+                variant="primary"
+                type="submit"
+              >
+                Already Have an Account?
+              </Button>
+            </Link>
+          </div>
+        </Form>
+      </div>
       <Routes>
-        <Route path="/Login" element={ <Login />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
+      <br />
+      <br/>
+      <Footer />
     </div>
   );
 };

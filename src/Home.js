@@ -1,11 +1,10 @@
 import React from "react";
 import Hero from "./Hero";
-import Header from "./Header";
-import $ from "jquery";
-
+import Footer from "./Footer";
+import Chat from "./Chat";
+import { Link, Routes, Route } from "react-router-dom";
 
 function Home() {
-  
   return (
     <div>
       <Hero />
@@ -102,10 +101,11 @@ function Home() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa fa-retweet"></i>
-                      </a>
+                      <Link to="/Chat">
+                        <i class="fa fa-comments"></i>
+                      </Link>
                     </li>
+
                     <li>
                       <a href="#">
                         <i className="fa fa-shopping-cart"></i>
@@ -136,10 +136,11 @@ function Home() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa fa-retweet"></i>
-                      </a>
+                      <Link to="/Chat">
+                        <i class="fa fa-comments"></i>
+                      </Link>
                     </li>
+
                     <li>
                       <a href="#">
                         <i className="fa fa-shopping-cart"></i>
@@ -170,10 +171,11 @@ function Home() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa fa-retweet"></i>
-                      </a>
+                      <Link to="/Chat">
+                        <i class="fa fa-comments"></i>
+                      </Link>
                     </li>
+
                     <li>
                       <a href="#">
                         <i className="fa fa-shopping-cart"></i>
@@ -204,10 +206,11 @@ function Home() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa fa-retweet"></i>
-                      </a>
+                      <Link to="/Chat">
+                        <i class="fa fa-comments"></i>
+                      </Link>
                     </li>
+
                     <li>
                       <a href="#">
                         <i className="fa fa-shopping-cart"></i>
@@ -238,10 +241,11 @@ function Home() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa fa-retweet"></i>
-                      </a>
+                      <Link to="/Chat">
+                        <i class="fa fa-comments"></i>
+                      </Link>
                     </li>
+
                     <li>
                       <a href="#">
                         <i className="fa fa-shopping-cart"></i>
@@ -272,10 +276,11 @@ function Home() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa fa-retweet"></i>
-                      </a>
+                      <Link to="/Chat">
+                        <i class="fa fa-comments"></i>
+                      </Link>
                     </li>
+
                     <li>
                       <a href="#">
                         <i className="fa fa-shopping-cart"></i>
@@ -306,10 +311,11 @@ function Home() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa fa-retweet"></i>
-                      </a>
+                      <Link to="/Chat">
+                        <i class="fa fa-comments"></i>
+                      </Link>
                     </li>
+
                     <li>
                       <a href="#">
                         <i className="fa fa-shopping-cart"></i>
@@ -340,10 +346,11 @@ function Home() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa fa-retweet"></i>
-                      </a>
+                      <Link to="/Chat">
+                        <i class="fa fa-comments"></i>
+                      </Link>
                     </li>
+
                     <li>
                       <a href="#">
                         <i className="fa fa-shopping-cart"></i>
@@ -580,7 +587,7 @@ function Home() {
           </div>
         </div>
       </section> */}
-      <section className="from-blog spad">
+      {/* <section className="from-blog spad">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -664,7 +671,11 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <br />
+      <br />
+      <Routes></Routes>
+      <Footer />
     </div>
   );
 }

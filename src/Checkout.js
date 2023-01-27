@@ -155,20 +155,20 @@ function Checkout() {
                     </div>
                     <ul>
                       <li>
-                        Vegetable’s Package <span>$75.99</span>
+                        Vegetable’s Package <span>Kshs. 75.99</span>
                       </li>
                       <li>
-                        Fresh Vegetable <span>$151.99</span>
+                        Fresh Vegetable <span>Kshs. 151.99</span>
                       </li>
                       <li>
-                        Organic Bananas <span>$53.99</span>
+                        Organic Bananas <span>Kshs. 53.99</span>
                       </li>
                     </ul>
                     <div className="checkout__order__subtotal">
-                      Subtotal <span>$750.99</span>
+                      Subtotal <span>Kshs. 750.99</span>
                     </div>
                     <div className="checkout__order__total">
-                      Total <span>$750.99</span>
+                      Total <span>Kshs. 750.99</span>
                     </div>
                     <div className="checkout__input__checkbox">
                       <label for="acc-or">

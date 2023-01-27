@@ -14,7 +14,7 @@ function Footer() {
                   </a>
                 </div>
                 <ul>
-                  <li>Address: 1317 Harry Place 28204 NC</li>
+                  <li>Address: Membley, Nairobi</li>
                   <li>Phone: 704-768-7449</li>
                   <li>Email: info@Mama Mboga.com</li>
                 </ul>
@@ -106,7 +106,7 @@ function Footer() {
                     <script>
                       document.write(new Date().getFullYear());
                     </script>{" "}
-                    All rights reserved | <b>TK</b>
+                    All rights reserved | <b>Anthony Thuita</b>
                   </p>
                 </div>
                 <div className="footer__copyright__payment"></div>
