@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {Link, Routes, Route} from "react-router-dom"
 import Header from "./Header"
 import Footer from "./Footer";
-import "./App.css";
+import "../App.css";
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);

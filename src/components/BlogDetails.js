@@ -140,8 +140,8 @@ function BlogDetails() {
                   The study area is located at the back with a view of the vast
                   nature. Together with the other buildings, a congruent story
                   has been managed in which the whole has a reinforcing effect
-                  on the components. The use of materials seeks connection to
-                  the main house, the adjacent stables
+                  on the . The use of materials seeks connection to the main
+                  house, the adjacent stables
                 </p>
               </div>
               <div className="blog__details__content">

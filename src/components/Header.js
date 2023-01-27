@@ -13,7 +13,7 @@ import Contact from "./Contact";
 import Upload from "./Upload";
 import Login from "./Login";
 import Register from "./Register";
-import Chat from './Chat';
+import Chat from "./Chat";
 import { Button } from "react-bootstrap";
 
 function Header() {
