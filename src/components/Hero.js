@@ -27,6 +27,14 @@ function Hero() {
     setIsSubMenu3Visible(!isSubMenu3Visible);
   };
 
+  const [isSubMenu4Visible, setIsSubMenu4Visible] = useState(false);
+
+
+  const handleSearchBarCategories = () => {
+    setIsSubMenu4Visible(!isSubMenu4Visible);
+  };
+  ;
+
   return (
     <div>
       <section className="hero">
@@ -49,7 +57,7 @@ function Hero() {
                       onClick={handleSubMenuButtonClick}
                     ></i>
                     <ul
-                      className=""
+                      className="border border-white pt-0 px-2"
                       style={{ display: isSubMenuVisible ? "block" : "none" }}
                     >
                       <li>Cabbage</li>
@@ -67,7 +75,7 @@ function Hero() {
                       onClick={handleSubMenu2ButtonClick}
                     ></i>
                     <ul
-                      className=""
+                      className="border border-white pt-0 px-2"
                       style={{ display: isSubMenu2Visible ? "block" : "none" }}
                     >
                       <li>Eggs</li>
@@ -83,7 +91,7 @@ function Hero() {
                       onClick={handleSubMenu3ButtonClick}
                     ></i>
                     <ul
-                      className=""
+                      className="border border-white pt-0 px-2"
                       style={{
                         display: isSubMenu3Visible ? "block" : "none",
                       }}
@@ -127,7 +135,20 @@ function Hero() {
                   <form action="#">
                     <div className="hero__search__categories">
                       All Categories
-                      <span className="arrow_carrot-down"></span>
+                      <span
+                        className="arrow_carrot-down"
+                        onClick={handleSearchBarCategories}
+                      ></span>
+                      <ul
+                        className="search-ul"
+                        style={{
+                          display: isSubMenu4Visible ? "block" : "none",
+                        }}
+                      >
+                        <li>Farm Produce</li>
+                        <li>Animal Produce</li>
+                        <li>Animals</li>
+                      </ul>
                     </div>
                     <input
                       type="text"
@@ -158,7 +179,7 @@ function Hero() {
                     Vegetable <br />
                     100% Organic
                   </h2>
-                  <p>Free Pickup and Delivery Available</p>
+                  <p>Trust us to deliver</p>
                   <Link to="/Shop" className="primary-btn">
                     <i class="bi bi-basket-fill mx-2"></i> SHOP NOW
                   </Link>

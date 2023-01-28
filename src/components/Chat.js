@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import handleSellButtonClick from './Header'
+import '../App.css'
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -53,33 +54,34 @@ const Chat = () => {
             </button>
           </form>
         </div> */}
+      
+        <div className="container border messages mb-3 col-sm-6">
+          <aside className="right-aside border col-sm-0">
+            <div className="top-bar">
+              <h3 className="title mx-2 text-success">Messages</h3>
+              <i className="fa fa-bars mx-5 mt-2" />
+            </div>
+            <div className="empty-messages m-5">
+              <img
+                src="https://assets.jiji.co.ke/static/img/profile/messenger-man.svg"
+                alt=""
+              />
+              <p>You Have no new Messages</p>
+            </div>
+          </aside>
 
-      <div className="container border messages mb-3">
-        <aside className="right-aside border ">
-          <div className="top-bar">
-            <h3 className="title mx-2 text-success">Messages</h3>
-            <i className="fa fa-bars mx-5 mt-2" />
-          </div>
-          <div className="empty-messages m-5">
-            <img
-              src="https://assets.jiji.co.ke/static/img/profile/messenger-man.svg"
-              alt=""
-            />
-            <p>You Have no new Messages</p>
-          </div>
-        </aside>
-
-        <div className="messages-area">
-          <div className="text-area">
-            <p>You do not have any Messages yet</p>
-            <p>Find things to discuss or sell something</p>
-            <p className="">or</p>
-            <Link to={handleSellButtonClick}>
-              <button className="btn btn-warning">Sell</button>
-            </Link>
+          <div className="messages-area col-sm-12">
+            <div className="text-area">
+              <p>You do not have any Messages yet</p>
+              <p>Find things to discuss or sell something</p>
+              <p className="">or</p>
+              <Link to={handleSellButtonClick}>
+                <button className="btn btn-warning">Sell</button>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      
 
       <Footer />
     </div>

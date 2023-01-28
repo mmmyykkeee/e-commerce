@@ -87,6 +87,12 @@ img {
   margin: 25% 0 0 45%;
 }
 
+.search-ul{
+  position: absolute;
+  z-index: 2;
+  list-style: none;
+}
+
 input:focus,
 select:focus,
 button:focus,

@@ -10,6 +10,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phonenumber, setPhoneNumber] = useState("");
+  const [marketercode, setMarketerCode] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -81,7 +82,18 @@ const Register = () => {
               type="number"
               placeholder="+254 701 234 567"
               value={phonenumber}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+            />
+          </Form.Group>
+          <Form.Group className="col-lg-12">
+            <Form.Label>
+              Marketer Code <span className="text-success">*</span>
+            </Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="AB-123"
+              value={marketercode}
+              onChange={(e) => setMarketerCode(e.target.value)}
             />
           </Form.Group>
           <div className="container d-flex mt-2">
@@ -107,7 +119,7 @@ const Register = () => {
         <Route path="/Login" element={<Login />} />
       </Routes>
       <br />
-      <br/>
+      <br />
       <Footer />
     </div>
   );
