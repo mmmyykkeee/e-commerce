@@ -107,6 +107,35 @@ a:focus {
   color: #ffffff;
 }
 
+.on-top{
+  z-index: 10;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80vw;
+  background-color: white;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+
+.side-nav{
+  list-style: none;
+  line-height: 2.5em;
+}
+
+.side-nav li{
+  list-style: none;
+}
+
+.mobile-nav{
+   translate: scale(2);
+}
+ 
 ul,
 ol {
   padding: 0;

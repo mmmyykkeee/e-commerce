@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 /* Preloader */
 window.addEventListener("load", function () {
   const loader = document.querySelector(".loader");

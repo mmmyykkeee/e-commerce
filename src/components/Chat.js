@@ -31,7 +31,7 @@ const Chat = () => {
 
   return (
     <div>
-      {/* <div className="container text-center">
+      <div className="container text-center">
           <h1>Chat</h1>
           <ul>
             {messages.map((message, index) => (
@@ -53,7 +53,7 @@ const Chat = () => {
               Request Phone Number
             </button>
           </form>
-        </div> */}
+        </div>
       
         <div className="container border messages mb-3 col-sm-6">
           <aside className="right-aside border col-sm-0">

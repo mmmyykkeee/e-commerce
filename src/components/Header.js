@@ -18,6 +18,12 @@ import { Button } from "react-bootstrap";
 
 function Header() {
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
+  const [showMobileNav, setShowMobileNav] = useState(false);
+
+  const handleFaBarsClick = () => {
+    setShowMobileNav(!showMobileNav);
+  };
+
 
   // const handleExit = () => {
   //   Swal({
@@ -53,6 +59,8 @@ function Header() {
       onClose: () => setShowLoginPrompt(false),
     });
   }
+
+  
 
   return (
     <header>
@@ -175,8 +183,60 @@ function Header() {
                 </div>
               </div>
             </div>
+
             <div className="hamburger__open ">
-              <i className="fa fa-bars"></i>
+              <i className="fa fa-bars" onClick={handleFaBarsClick}></i>
+              {showMobileNav && (
+                <div className="mobile-nav">
+                  <ul className="mx-4 side-nav">
+                    <li>
+                      <Link to="/" onClick={handleFaBarsClick}>
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/Shop" onClick={handleFaBarsClick}>
+                        Shop
+                      </Link>
+                    </li>
+                    <li onClick={handleFaBarsClick}>
+                      Pages
+                      <ul className="mx-4 d-down">
+                        <li>
+                          <Link to="/ShopInfo" onClick={handleFaBarsClick}>
+                            Shop Details
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/ShoppingCart" onClick={handleFaBarsClick}>
+                            Shopping Cart
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/Checkout" onClick={handleFaBarsClick}>
+                            Checkout
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/BlogDetails" onClick={handleFaBarsClick}>
+                            BlogDetails
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <Link to="/Blog" onClick={handleFaBarsClick}>
+                        Blog
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/Contact" onClick={handleFaBarsClick}>
+                        Contacts
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </header>
