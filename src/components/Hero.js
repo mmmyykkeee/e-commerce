@@ -58,7 +58,7 @@ function Hero() {
                     ></i>
                     <ul
                       className="border border-white pt-0 px-2"
-                      style={{ display: isSubMenuVisible ? "block" : "none" }}
+                      style={{ display: isSubMenuVisible ? "none" : "block" }}
                     >
                       <li>Cabbage</li>
                       <li>Avocado</li>
@@ -76,7 +76,7 @@ function Hero() {
                     ></i>
                     <ul
                       className="border border-white pt-0 px-2"
-                      style={{ display: isSubMenu2Visible ? "block" : "none" }}
+                      style={{ display: isSubMenu2Visible ? "none" : "block" }}
                     >
                       <li>Eggs</li>
                       <li>Milk</li>
@@ -93,7 +93,7 @@ function Hero() {
                     <ul
                       className="border border-white pt-0 px-2"
                       style={{
-                        display: isSubMenu3Visible ? "block" : "none",
+                        display: isSubMenu3Visible ? "none" : "block",
                       }}
                     >
                       <li>Chicken</li>
@@ -102,30 +102,7 @@ function Hero() {
                       <li>Rabbit</li>
                     </ul>
                   </li>
-                  {/* <li>
-                    <a href="#">Fresh Berries</a>
-                  </li>
-                  <li>
-                    <a href="#">Ocean Foods</a>
-                  </li>
-                  <li>
-                    <a href="#">Butter & Eggs</a>
-                  </li>
-                  <li>
-                    <a href="#">Fastfood</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Onion</a>
-                  </li>
-                  <li>
-                    <a href="#">Papayaya & Crisps</a>
-                  </li>
-                  <li>
-                    <a href="#">Oatmeal</a>
-                  </li>
-                  <li>
-                    <a href="#">Fresh Bananas</a>
-                  </li> */}
+                
                 </ul>
               </div>
             </div>
@@ -139,16 +116,7 @@ function Hero() {
                         className="arrow_carrot-down"
                         onClick={handleSearchBarCategories}
                       ></span>
-                      <ul
-                        className="search-ul"
-                        style={{
-                          display: isSubMenu4Visible ? "block" : "none",
-                        }}
-                      >
-                        <li>Farm Produce</li>
-                        <li>Animal Produce</li>
-                        <li>Animals</li>
-                      </ul>
+                     
                     </div>
                     <input
                       type="text"

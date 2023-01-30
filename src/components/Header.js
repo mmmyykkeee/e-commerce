@@ -15,6 +15,7 @@ import Login from "./Login";
 import Register from "./Register";
 import Chat from "./Chat";
 import { Button } from "react-bootstrap";
+import Items from "./Items";
 
 function Header() {
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
@@ -23,25 +24,6 @@ function Header() {
   const handleFaBarsClick = () => {
     setShowMobileNav(!showMobileNav);
   };
-
-
-  // const handleExit = () => {
-  //   Swal({
-  //     title: "Are you sure?",
-  //     text: "Once deleted, you will not be able to recover this imaginary file!",
-  //     icon: "warning",
-  //     buttons: true,
-  //     dangerMode: true,
-  //   }).then((willDelete) => {
-  //     if (willDelete) {
-  //       Swal("Poof! Your imaginary file has been deleted!", {
-  //         icon: "success",
-  //       });
-  //     } else {
-  //       Swal("Your imaginary file is safe!");
-  //     }
-  //   });
-  // }
 
   const handleSellButtonClick = () => {
     setShowLoginPrompt(true);
@@ -59,8 +41,6 @@ function Header() {
       onClose: () => setShowLoginPrompt(false),
     });
   }
-
-  
 
   return (
     <header>
@@ -111,9 +91,7 @@ function Header() {
                     >
                       Sell
                     </button>
-                    {/* <Link to="/Upload">
-                      Upload
-                    </Link> */}
+                    <Link to="/Items">Uppp</Link>
                   </div>
                 </div>
               </div>
@@ -254,6 +232,7 @@ function Header() {
         <Route path="/Register" element={<Register />} />
         <Route path="/Upload" element={<Upload />} />
         <Route path="/Chat" element={<Chat />} />
+        <Route path="/Items" element={<Items />} />
       </Routes>
     </header>
   );
