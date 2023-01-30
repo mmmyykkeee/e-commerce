@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 import Footer from "./Footer";
 import Hero from "./Hero";
 
@@ -45,26 +44,26 @@ function BlogDetails() {
                   <h4>Categories</h4>
                   <ul>
                     <li>
-                      <a href="#">All</a>
+                      <a href="!#">All</a>
                     </li>
                     <li>
-                      <a href="#">Beauty (20)</a>
+                      <a href="!#">Beauty (20)</a>
                     </li>
                     <li>
-                      <a href="#">Food (5)</a>
+                      <a href="!#">Food (5)</a>
                     </li>
                     <li>
-                      <a href="#">Life Style (9)</a>
+                      <a href="!#">Life Style (9)</a>
                     </li>
                     <li>
-                      <a href="#">Travel (10)</a>
+                      <a href="!#">Travel (10)</a>
                     </li>
                   </ul>
                 </div>
                 <div className="blog__sidebar__item">
                   <h4>Recent News</h4>
                   <div className="blog__sidebar__recent">
-                    <a href="#" className="blog__sidebar__recent__item">
+                    <a href="!#" className="blog__sidebar__recent__item">
                       <div className="blog__sidebar__recent__item__pic">
                         <img src="img/blog/sidebar/sr-1.jpg" alt="" />
                       </div>
@@ -76,7 +75,7 @@ function BlogDetails() {
                         <span>MAR 05, 2019</span>
                       </div>
                     </a>
-                    <a href="#" className="blog__sidebar__recent__item">
+                    <a href="!#" className="blog__sidebar__recent__item">
                       <div className="blog__sidebar__recent__item__pic">
                         <img src="img/blog/sidebar/sr-2.jpg" alt="" />
                       </div>
@@ -88,7 +87,7 @@ function BlogDetails() {
                         <span>MAR 05, 2019</span>
                       </div>
                     </a>
-                    <a href="#" className="blog__sidebar__recent__item">
+                    <a href="!#" className="blog__sidebar__recent__item">
                       <div className="blog__sidebar__recent__item__pic">
                         <img src="img/blog/sidebar/sr-3.jpg" alt="" />
                       </div>
@@ -105,12 +104,12 @@ function BlogDetails() {
                 <div className="blog__sidebar__item">
                   <h4>Search By</h4>
                   <div className="blog__sidebar__item__tags">
-                    <a href="#">Apple</a>
-                    <a href="#">Beauty</a>
-                    <a href="#">Vegetables</a>
-                    <a href="#">Fruit</a>
-                    <a href="#">Healthy Food</a>
-                    <a href="#">Lifestyle</a>
+                    <a href="!#">Apple</a>
+                    <a href="!#">Beauty</a>
+                    <a href="!#">Vegetables</a>
+                    <a href="!#">Fruit</a>
+                    <a href="!#">Healthy Food</a>
+                    <a href="!#">Lifestyle</a>
                   </div>
                 </div>
               </div>
@@ -169,19 +168,19 @@ function BlogDetails() {
                         </li>
                       </ul>
                       <div className="blog__details__social">
-                        <a href="#">
+                        <a href="!#">
                           <i className="fa fa-facebook"></i>
                         </a>
-                        <a href="#">
+                        <a href="!#">
                           <i className="fa fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="!#">
                           <i className="fa fa-google-plus"></i>
                         </a>
-                        <a href="#">
+                        <a href="!#">
                           <i className="fa fa-linkedin"></i>
                         </a>
-                        <a href="#">
+                        <a href="!#">
                           <i className="fa fa-envelope"></i>
                         </a>
                       </div>
@@ -219,7 +218,7 @@ function BlogDetails() {
                     </li>
                   </ul>
                   <h5>
-                    <a href="#">Cooking tips make cooking simple</a>
+                    <a href="!#">Cooking tips make cooking simple</a>
                   </h5>
                   <p>
                     Sed quia non numquam modi tempora indunt ut labore et dolore
@@ -243,7 +242,7 @@ function BlogDetails() {
                     </li>
                   </ul>
                   <h5>
-                    <a href="#">6 ways to prepare breakfast for 30</a>
+                    <a href="!#">6 ways to prepare breakfast for 30</a>
                   </h5>
                   <p>
                     Sed quia non numquam modi tempora indunt ut labore et dolore
@@ -267,7 +266,7 @@ function BlogDetails() {
                     </li>
                   </ul>
                   <h5>
-                    <a href="#">Visit the clean farm in the US</a>
+                    <a href="!#">Visit the clean farm in the US</a>
                   </h5>
                   <p>
                     Sed quia non numquam modi tempora indunt ut labore et dolore

@@ -1,8 +1,7 @@
 import React from "react";
 import Hero from "./Hero";
 import Footer from "./Footer";
-import Chat from "./Chat";
-import { Link, Routes, Route } from "react-router-dom";
+import { Routes} from "react-router-dom";
 import Items from "./Items";
 
 function Home() {
@@ -17,7 +16,7 @@ function Home() {
                 <div className="categories__item set-bg">
                   <img src="img/categories/cat-1.jpg" alt="" />
                   <h5>
-                    <a href="#">Fresh Fruit</a>
+                    <a href="!#">Fresh Fruit</a>
                   </h5>
                 </div>
               </div>
@@ -27,7 +26,7 @@ function Home() {
                   data-setbg="img/categories/cat-2.jpg"
                 >
                   <h5>
-                    <a href="#">Dried Fruit</a>
+                    <a href="!#">Dried Fruit</a>
                   </h5>
                 </div>
               </div>
@@ -37,7 +36,7 @@ function Home() {
                   data-setbg="img/categories/cat-3.jpg"
                 >
                   <h5>
-                    <a href="#">Vegetables</a>
+                    <a href="!#">Vegetables</a>
                   </h5>
                 </div>
               </div>
@@ -47,7 +46,7 @@ function Home() {
                   data-setbg="img/categories/cat-4.jpg"
                 >
                   <h5>
-                    <a href="#">Fruit Drinks</a>
+                    <a href="!#">Fruit Drinks</a>
                   </h5>
                 </div>
               </div>
@@ -57,7 +56,7 @@ function Home() {
                   data-setbg="img/categories/cat-5.jpg"
                 >
                   <h5>
-                    <a href="#">Fresh Meat</a>
+                    <a href="!#">Fresh Meat</a>
                   </h5>
                 </div>
               </div>
@@ -70,7 +69,7 @@ function Home() {
           <div className="row">
             <div className="col-lg-12">
               <div className="section-title">
-                <h2>Featured Products</h2>
+                <h2>Recently Added</h2>
               </div>
               <div className="featured__controls">
                 <ul>
@@ -86,13 +85,7 @@ function Home() {
             </div>
           </div>
 
-         
-
-          
           <Items />
-
-
-
         </div>
       </section>
       <div className="banner">
@@ -112,7 +105,6 @@ function Home() {
         </div>
       </div>
 
-      
       <br />
       <br />
       <Routes></Routes>

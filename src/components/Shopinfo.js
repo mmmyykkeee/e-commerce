@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "./Footer";
-import Header from "./Header";
 
 function Shopinfo() {
   return (
@@ -87,10 +86,10 @@ function Shopinfo() {
                     </div>
                   </div>
                 </div>
-                <a href="javascript:void(0);" className="primary-btn">
+                <a href="!#" className="primary-btn">
                   ADD TO CARD
                 </a>
-                <a href="javascript:void(0);" className="heart-icon">
+                <a href="!#" className="heart-icon">
                   <span className="icon_heart_alt"></span>
                 </a>
                 <ul>
@@ -109,16 +108,16 @@ function Shopinfo() {
                   <li>
                     <b>Share on</b>
                     <div className="share">
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-facebook"></i>
                       </a>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-twitter"></i>
                       </a>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-instagram"></i>
                       </a>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-pinterest"></i>
                       </a>
                     </div>
@@ -133,7 +132,7 @@ function Shopinfo() {
                     <a
                       className="nav-link active"
                       data-toggle="tab"
-                      href="#tabs-1"
+                      href="!#"
                       role="tab"
                       aria-selected="true"
                     >
@@ -144,7 +143,7 @@ function Shopinfo() {
                     <a
                       className="nav-link"
                       data-toggle="tab"
-                      href="#tabs-2"
+                      href="!#"
                       role="tab"
                       aria-selected="false"
                     >
@@ -155,7 +154,7 @@ function Shopinfo() {
                     <a
                       className="nav-link"
                       data-toggle="tab"
-                      href="#tabs-3"
+                      href="!#"
                       role="tab"
                       aria-selected="false"
                     >
@@ -254,17 +253,17 @@ function Shopinfo() {
                 >
                   <ul className="product__item__pic__hover">
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-heart"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-retweet"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-shopping-cart"></i>
                       </a>
                     </li>
@@ -272,7 +271,7 @@ function Shopinfo() {
                 </div>
                 <div className="product__item__text">
                   <h6>
-                    <a href="javascript:void(0);">1</a>
+                    <a href="!#">1</a>
                   </h6>
                   <h5>Kshs.30.00</h5>
                 </div>
@@ -289,17 +288,17 @@ function Shopinfo() {
                 >
                   <ul className="product__item__pic__hover">
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-heart"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-retweet"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-shopping-cart"></i>
                       </a>
                     </li>
@@ -307,7 +306,7 @@ function Shopinfo() {
                 </div>
                 <div className="product__item__text">
                   <h6>
-                    <a href="javascript:void(0);">2</a>
+                    <a href="!#">2</a>
                   </h6>
                   <h5>Kshs.30.00</h5>
                 </div>
@@ -324,17 +323,17 @@ function Shopinfo() {
                 >
                   <ul className="product__item__pic__hover">
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-heart"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-retweet"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-shopping-cart"></i>
                       </a>
                     </li>
@@ -342,7 +341,7 @@ function Shopinfo() {
                 </div>
                 <div className="product__item__text">
                   <h6>
-                    <a href="javascript:void(0);">3</a>
+                    <a href="!#">3</a>
                   </h6>
                   <h5>Kshs.30.00</h5>
                 </div>
@@ -359,17 +358,17 @@ function Shopinfo() {
                 >
                   <ul className="product__item__pic__hover">
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-heart"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-retweet"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:void(0);">
+                      <a href="!#">
                         <i className="fa fa-shopping-cart"></i>
                       </a>
                     </li>
@@ -377,7 +376,7 @@ function Shopinfo() {
                 </div>
                 <div className="product__item__text">
                   <h6>
-                    <a href="javascript:void(0);">4</a>
+                    <a href="!#">4</a>
                   </h6>
                   <h5>Kshs.30.00</h5>
                 </div>

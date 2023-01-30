@@ -32,57 +32,59 @@ const Chat = () => {
   return (
     <div>
       <div className="container text-center">
-          <h1>Chat</h1>
-          <ul>
-            {messages.map((message, index) => (
-              <li key={index}>{message}</li>
-            ))}
-          </ul>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              placeholder="Enter your message"
-              value={newMessage}
-              onChange={(event) => setNewMessage(event.target.value)}
-            />
-            <button className="mx-2 btn btn-success" type="submit">
-              Send
-            </button>
-            <br />
-            <button className="mt-2 mb-2 btn btn-success" type="submit">
-              Request Phone Number
-            </button>
-          </form>
-        </div>
-      
-        <div className="container border messages mb-3 col-sm-6">
-          <aside className="right-aside border col-sm-0">
-            <div className="top-bar">
-              <h3 className="title mx-2 text-success">Messages</h3>
-              <i className="fa fa-bars mx-5 mt-2" />
+        <h1>Chat</h1>
+        <ul>
+          {messages.map((message, index) => (
+            <li key={index}>{message}</li>
+          ))}
+        </ul>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Enter your message"
+            value={newMessage}
+            onChange={(event) => setNewMessage(event.target.value)}
+          />
+          <button className="mx-2 btn btn-success" type="submit">
+            Send
+          </button>
+          <br />
+          <button className="mt-2 mb-2 btn btn-success" type="submit">
+            Request Phone Number
+          </button>
+        </form>
+      </div>
+
+
+      <div className="container ">
+        <div className="row d-flex">
+          <div className="left-side col-lg-4 col-md-6 right-aside d-lg-block d-xs-none">
+            <div className="d-flex align-items-center justify-content-around mt-3 ">
+              <h3>Messages</h3>
+              <i className="fa fa-bars" />
             </div>
-            <div className="empty-messages m-5">
+            <hr />
+            <div className="d-flex image-holder">
               <img
+                className="m-auto"
                 src="https://assets.jiji.co.ke/static/img/profile/messenger-man.svg"
                 alt=""
               />
-              <p>You Have no new Messages</p>
             </div>
-          </aside>
-
-          <div className="messages-area col-sm-12">
-            <div className="text-area">
-              <p>You do not have any Messages yet</p>
-              <p>Find things to discuss or sell something</p>
-              <p className="">or</p>
-              <Link to={handleSellButtonClick}>
-                <button className="btn btn-warning">Sell</button>
-              </Link>
+          </div>
+          <div className="right-side col-lg-8 col-md-6 messages">
+              <i className=" messages-bars fa fa-bars mt-3"></i>
+            <div className="d-flex tes align-items-center justify-content-around">
+              <div className="m-auto">
+                <p>You have no messages yet</p>
+                <p><Link>Find something</Link> to discuss or Post something</p>
+                <button className="btn btn-warning border">Post something</button>
+              </div>
             </div>
           </div>
         </div>
-      
-
+      </div>
+      <br />
       <Footer />
     </div>
   );

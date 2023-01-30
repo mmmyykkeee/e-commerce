@@ -26,42 +26,42 @@ function Footer() {
                 <h6>Useful Links</h6>
                 <ul>
                   <li>
-                    <a href="#">About Us</a>
+                    <a href="!#">About Us</a>
                   </li>
                   <li>
-                    <a href="#">About Our Shop</a>
+                    <a href="!#">About Our Shop</a>
                   </li>
                   <li>
-                    <a href="#">Secure Shopping</a>
+                    <a href="!#">Secure Shopping</a>
                   </li>
                   <li>
-                    <a href="#">Delivery infomation</a>
+                    <a href="!#">Delivery infomation</a>
                   </li>
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <a href="!#">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="#">Our Sitemap</a>
+                    <a href="!#">Our Sitemap</a>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <a href="#">Who Are We</a>
+                    <a href="!#">Who Are We</a>
                   </li>
                   <li>
-                    <a href="#">Our Services</a>
+                    <a href="!#">Our Services</a>
                   </li>
                   <li>
-                    <a href="#">Projects</a>
+                    <a href="!#">Projects</a>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <a href="!#">Contact</a>
                   </li>
                   <li>
-                    <a href="#">Innovation</a>
+                    <a href="!#">Innovation</a>
                   </li>
                   <li>
-                    <a href="#">Testimonials</a>
+                    <a href="!#">Testimonials</a>
                   </li>
                 </ul>
               </div>

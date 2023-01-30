@@ -59,27 +59,50 @@ img {
   max-width: 100%;
 }
 .messages{
-  box-shadow: 15px 40px 93px 26px rgba(0,0,0,0.1);
+  box-shadow: 15px 40px 93px 26px #f8f6f61a;
   height: 70vh;
-  width: 70vw;
-  position: relative;
   background-color: #c9c5c5;
 }
 
 .right-aside{
-  width: 20%;
-  height: 100%;
-  position: absolute;
-  left: 0;
+ 
   background-color: #f0eded;
 
 }
+.messages-bars{
+  display: none;
+}
+
+@media (max-width:768px) {
+  .right-aside{
+    display:none;
+  }
+  .messages-bars{
+    display: block;
+  }
+}
+
+.card-content{
+  display: none;
+}
+
+.main-card:hover .card-content{
+  display: block;
+ }
 
 .top-bar{
   display: flex;
   align-items: center;
   border-bottom: 2px solid #b9b6b6;
   height: 3.5em;
+}
+
+.image-holder{
+  height: 400px;
+}
+
+.tes{
+  height: 100%;
 }
 
 .text-area{

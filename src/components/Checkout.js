@@ -1,8 +1,5 @@
 import React from "react";
-import Header from "./Header";
 import Footer from "./Footer";
-import Hero from "./Hero";
-
 function Checkout() {
   return (
     <div>
@@ -30,7 +27,7 @@ function Checkout() {
             <div className="col-lg-12">
               <h6>
                 <span className="icon_tag_alt"></span> Have a coupon?{" "}
-                <a href="#">Click here</a> to enter your code
+                <a href="!#">Click here</a> to enter your code
               </h6>
             </div>
           </div>

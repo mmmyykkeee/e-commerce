@@ -1,7 +1,5 @@
 import React from "react";
-import Header from "./Header";
 import Footer from "./Footer";
-import Hero from "./Hero";
 
 function ShoppingCart() {
   return (
@@ -84,10 +82,10 @@ function ShoppingCart() {
           <div className="row">
             <div className="col-lg-12">
               <div className="shoping__cart__btns">
-                <a href="#" className="primary-btn cart-btn">
+                <a href="!#" className="primary-btn cart-btn">
                   CONTINUE SHOPPING
                 </a>
-                <a href="#" className="primary-btn cart-btn cart-btn-right">
+                <a href="!#" className="primary-btn cart-btn cart-btn-right">
                   <span className="icon_loading"></span>
                   UPDATE CART
                 </a>
@@ -117,7 +115,7 @@ function ShoppingCart() {
                     Total <span>Kshs. 454.98</span>
                   </li>
                 </ul>
-                <a href="#" className="primary-btn">
+                <a href="!#" className="primary-btn">
                   PROCEED TO CHECKOUT
                 </a>
               </div>

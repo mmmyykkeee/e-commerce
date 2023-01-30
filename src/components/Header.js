@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import Home from "./Home";
-import Footer from "./Footer";
 import Shopinfo from "./Shopinfo";
 import Shop from "./Shop";
 import Blog from "./Blog";
@@ -14,7 +13,6 @@ import Upload from "./Upload";
 import Login from "./Login";
 import Register from "./Register";
 import Chat from "./Chat";
-import { Button } from "react-bootstrap";
 import Items from "./Items";
 
 function Header() {
@@ -145,12 +143,12 @@ function Header() {
                 <div className="header__cart">
                   <ul>
                     <li>
-                      <a href="#">
+                      <a href="!#">
                         <i className="fa fa-heart"></i> <span>1</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="!#">
                         <i className="fa fa-shopping-bag"></i> <span>3</span>
                       </a>
                     </li>
