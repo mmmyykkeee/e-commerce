@@ -89,7 +89,6 @@ function Header() {
                     >
                       Sell
                     </button>
-                    <Link to="/Items">Uppp</Link>
                   </div>
                 </div>
               </div>
