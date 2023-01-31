@@ -143,7 +143,7 @@ function Hero() {
                     100% Organic
                   </h2>
                   <p className="text-white">Trust us to deliver</p>
-                  <Link to="/Shop" className="primary-btn">
+                  <Link to="/Buy" className="primary-btn">
                     <i class="bi bi-basket-fill mx-2"></i> SHOP NOW
                   </Link>
                 </div>
@@ -152,7 +152,7 @@ function Hero() {
           </div>
         </div>
         <Routes>
-          <Route path="/Shop" element={<Shop />} />
+          <Route path="/Buy" element={<Buy />} />
         </Routes>
       </section>
     </div>
