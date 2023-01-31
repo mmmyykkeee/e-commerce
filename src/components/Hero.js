@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import Shop from "./Buy";
+import Buy from "./Buy";
 
 function Hero() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
