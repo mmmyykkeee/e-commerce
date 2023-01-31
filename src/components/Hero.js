@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import Shop from "./Shop";
+import Shop from "./Buy";
 
 function Hero() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -29,12 +29,9 @@ function Hero() {
 
   const [isSubMenu4Visible, setIsSubMenu4Visible] = useState(false);
 
-
   const handleSearchBarCategories = () => {
     setIsSubMenu4Visible(!isSubMenu4Visible);
   };
-  ;
-
   return (
     <div>
       <section className="hero">
@@ -47,9 +44,9 @@ function Hero() {
                   onClick={handleMenuButtonClick}
                 >
                   <i className="fa fa-bars"></i>
-                  <span>All Departments</span>
+                  <span>All Categories</span>
                 </div>
-                <ul style={{ display: isMenuVisible ? "none" : "block" }}>
+                <ul style={{ display: isMenuVisible ? "block" : "none" }}>
                   <li className="align-items-bottom">
                     Farm Products
                     <i
@@ -58,7 +55,7 @@ function Hero() {
                     ></i>
                     <ul
                       className="border border-white pt-0 px-2"
-                      style={{ display: isSubMenuVisible ? "none" : "block" }}
+                      style={{ display: isSubMenuVisible ? "block" : "none" }}
                     >
                       <li>Cabbage</li>
                       <li>Avocado</li>
@@ -76,7 +73,7 @@ function Hero() {
                     ></i>
                     <ul
                       className="border border-white pt-0 px-2"
-                      style={{ display: isSubMenu2Visible ? "none" : "block" }}
+                      style={{ display: isSubMenu2Visible ? "block" : "none" }}
                     >
                       <li>Eggs</li>
                       <li>Milk</li>
@@ -93,7 +90,7 @@ function Hero() {
                     <ul
                       className="border border-white pt-0 px-2"
                       style={{
-                        display: isSubMenu3Visible ? "none" : "block",
+                        display: isSubMenu3Visible ? "block" : "none",
                       }}
                     >
                       <li>Chicken</li>
@@ -102,7 +99,6 @@ function Hero() {
                       <li>Rabbit</li>
                     </ul>
                   </li>
-                
                 </ul>
               </div>
             </div>
@@ -116,7 +112,6 @@ function Hero() {
                         className="arrow_carrot-down"
                         onClick={handleSearchBarCategories}
                       ></span>
-                     
                     </div>
                     <input
                       type="text"
@@ -143,11 +138,11 @@ function Hero() {
               >
                 <div className="hero__text">
                   <span>FRESH FRUIT</span>
-                  <h2>
+                  <h2 className="text-white">
                     Vegetable <br />
                     100% Organic
                   </h2>
-                  <p>Trust us to deliver</p>
+                  <p className="text-white">Trust us to deliver</p>
                   <Link to="/Shop" className="primary-btn">
                     <i class="bi bi-basket-fill mx-2"></i> SHOP NOW
                   </Link>

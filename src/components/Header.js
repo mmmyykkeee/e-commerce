@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import Home from "./Home";
-import Shopinfo from "./Shopinfo";
-import Shop from "./Shop";
+import SellerDetails from "./SellerInfo";
+import Buy from "./Buy";
 import Blog from "./Blog";
-import ShoppingCart from "./ShoppingCart";
+import WishList from "./WishList";
 import Checkout from "./Checkout";
 import BlogDetails from "./BlogDetails";
 import Contact from "./Contact";
@@ -96,61 +96,45 @@ function Header() {
           </div>
           <div className="container">
             <div className="row">
-              <div className="col-lg-3">
+              <div className="col-lg-3 ">
                 <div className="header__logo">
                   <Link to="/">
                     <img src="img/logo.png" alt="" className="w-2" />
                   </Link>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-7">
                 <nav className="header__menu">
                   <ul>
                     <li className="actives">
                       <Link to="/">Home</Link>
                     </li>
                     <li>
-                      <Link to="/Shop">Shop</Link>
+                      <Link to="/Buy">Buy</Link>
+                    </li>
+
+                    <li>
+                      <Link a="/SellerDetails">Seller Details</Link>
                     </li>
                     <li>
-                      <Link to="#">Pages</Link>
-                      <ul className="header__menu__dropdown">
-                        <li>
-                          <Link a="/Shopinfo">Shop Details</Link>
-                        </li>
-                        <li>
-                          <Link to="/ShoppingCart">Shoping Cart</Link>
-                        </li>
-                        <li>
-                          <Link to="/Checkout">Check Out</Link>
-                        </li>
-                        <li>
-                          <Link to="/BlogDetails">Blog Details</Link>
-                        </li>
-                      </ul>
+                      <Link to="/WishList">Wish-List</Link>
                     </li>
+
                     <li>
-                      <Link to="/Blog">Blog</Link>
-                    </li>
-                    <li>
-                      <Link to="/Contact">Contact</Link>
+                      <Link to="/Contact">Support</Link>
                     </li>
                   </ul>
                 </nav>
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-2">
                 <div className="header__cart">
                   <ul>
                     <li>
                       <a href="!#">
-                        <i className="fa fa-heart"></i> <span>1</span>
+                        <i className="fa fa-heart wish-list" title="Wish List"></i> <span>1</span>
                       </a>
                     </li>
-                    <li>
-                      <a href="!#">
-                        <i className="fa fa-shopping-bag"></i> <span>3</span>
-                      </a>
-                    </li>
+                    
                   </ul>
                   <div className="header__cart__price">
                     <span>Kshs. 10.00</span>
@@ -159,10 +143,10 @@ function Header() {
               </div>
             </div>
 
-            <div className="hamburger__open ">
+            <div className="hamburger__open">
               <i className="fa fa-bars" onClick={handleFaBarsClick}></i>
               {showMobileNav && (
-                <div className="mobile-nav">
+                <div className="mobile-nav bg-secondary text-white">
                   <ul className="mx-4 side-nav">
                     <li>
                       <Link to="/" onClick={handleFaBarsClick}>
@@ -171,44 +155,39 @@ function Header() {
                     </li>
                     <li>
                       <Link to="/Shop" onClick={handleFaBarsClick}>
-                        Shop
+                        Buy
                       </Link>
                     </li>
-                    <li onClick={handleFaBarsClick}>
-                      Pages
-                      <ul className="mx-4 d-down">
-                        <li>
-                          <Link to="/ShopInfo" onClick={handleFaBarsClick}>
-                            Shop Details
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/ShoppingCart" onClick={handleFaBarsClick}>
-                            Shopping Cart
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/Checkout" onClick={handleFaBarsClick}>
-                            Checkout
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/BlogDetails" onClick={handleFaBarsClick}>
-                            BlogDetails
-                          </Link>
-                        </li>
-                      </ul>
+
+                    <li>
+                      <Link to="/SellerDetails" onClick={handleFaBarsClick}>
+                        Seller Details
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/Blog" onClick={handleFaBarsClick}>
-                        Blog
+                      <Link to="/WishList" onClick={handleFaBarsClick}>
+                        Wish List
                       </Link>
                     </li>
+
                     <li>
                       <Link to="/Contact" onClick={handleFaBarsClick}>
-                        Contacts
+                        Support
                       </Link>
                     </li>
+                    <div className="user-buttons p-2">
+                      <Link to="/Login" onClick={handleFaBarsClick}>
+                        <button className="btn btn-primary mx-2">Log In</button>
+                      </Link>
+                      <Link to="/Register" onClick={handleFaBarsClick}>
+                        <button className="btn btn-primary mx-2">
+                          Register
+                        </button>
+                      </Link>
+                    </div>
+                    <Link to="/Upload" onClick={handleFaBarsClick}>
+                      <button className="btn btn-danger">Sell</button>
+                    </Link>
                   </ul>
                 </div>
               )}
@@ -218,9 +197,9 @@ function Header() {
       </div>
       <Routes>
         <Route path="*" element={<Home />} />
-        <Route path="/Shop" element={<Shop />} />
-        <Route path="/ShopInfo" element={<Shopinfo />} />
-        <Route path="/ShoppingCart" element={<ShoppingCart />} />
+        <Route path="/Buy" element={<Buy />} />
+        <Route path="/SellerDetails" element={<SellerDetails />} />
+        <Route path="/WishList" element={<WishList />} />
         <Route path="/BlogDetails" element={<BlogDetails />} />
         <Route path="/Checkout" element={<Checkout />} />
         <Route path="/Blog" element={<Blog />} />

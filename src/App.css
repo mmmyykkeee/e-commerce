@@ -55,68 +55,148 @@ p {
   margin: 0 0 15px 0;
 }
 
+.wish-list:hover::after{
+ 
+  content: attr(title);
+  position: absolute;
+  padding: 4px 8px;
+  background-color: #000;
+  color: #fff;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+}
+
+
+.all-cards {
+  display: flex;
+  margin: auto;
+}
+
+.form{
+  width: 90%;
+}
+
+.card {
+  margin: 0 2rem 2rem 0;
+  height: 254px;
+  width: 250px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 1em;
+  border: none;
+  box-shadow: 0 0 2px 1px #f0ecec;
+  overflow: hidden;
+  display: flex;
+}
+
+/*Image*/
+.card-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background: #edeef1;
+  background: linear-gradient(to top, #e2e2e2, #d1d3d4);
+}
+
+/*Description */
+.card-description {
+  display: flex;
+  position: absolute;
+  gap: 0.01em;
+  flex-direction: column;
+  background-color: #00b53f;
+  height: 90%;
+  width: 260px;
+  bottom: -70%;
+  border-radius: 1em 1em 0 0;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 1rem;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.text-body {
+  font-size: 1em;
+  line-height: 150%;
+}
+
+/* Hover states */
+
+.card:hover .card-description {
+  transform: translateY(-75%);
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: auto 2.5px 1em;
+  }
+}
+
 img {
   max-width: 100%;
 }
-.messages{
+
+.messages {
   box-shadow: 15px 40px 93px 26px #f8f6f61a;
   height: 70vh;
   background-color: #c9c5c5;
 }
 
-.right-aside{
- 
+.right-aside {
   background-color: #f0eded;
-
 }
-.messages-bars{
+.messages-bars {
   display: none;
 }
 
-@media (max-width:768px) {
-  .right-aside{
-    display:none;
+@media (max-width: 768px) {
+  .right-aside {
+    display: none;
   }
-  .messages-bars{
+  .messages-bars {
     display: block;
   }
 }
 
-.card-content{
+.card-content {
   display: none;
 }
 
-.main-card:hover .card-content{
+.main-card:hover .card-content {
   display: block;
- }
+}
 
-.top-bar{
+.top-bar {
   display: flex;
   align-items: center;
   border-bottom: 2px solid #b9b6b6;
   height: 3.5em;
 }
 
-.image-holder{
+.image-holder {
   height: 400px;
 }
 
-.tes{
+.tes {
   height: 100%;
 }
 
-.text-area{
+.text-area {
   justify-content: center;
   margin: 25% 0 0 45%;
 }
 
-.search-ul{
+.search-ul {
   position: absolute;
   z-index: 2;
   list-style: none;
 }
-
-
 
 input:focus,
 select:focus,
@@ -132,7 +212,7 @@ a:focus {
   color: #ffffff;
 }
 
-.on-top{
+.on-top {
   z-index: 10;
 }
 
@@ -147,37 +227,35 @@ a:focus {
   z-index: 10;
 }
 
-
-.side-nav{
+.side-nav {
   list-style: none;
   line-height: 2.5em;
 }
 
-.side-nav li{
+.side-nav li {
   list-style: none;
 }
 
-.mobile-nav{
-   translate: scale(2);
+.mobile-nav {
+  translate: scale(2);
 }
- 
+
 ul,
 ol {
   padding: 0;
   margin: 0;
 }
 
-.button-container{
+.button-container {
   display: flex;
   justify-content: space-around;
-  
 }
-.buttons{
+.buttons {
   position: relative;
 }
-.btn-dangers{
+.btn-dangers {
   position: absolute;
-  right:0px;
+  right: 0px;
 }
 
 section {

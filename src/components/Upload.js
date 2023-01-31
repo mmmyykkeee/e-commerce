@@ -48,7 +48,8 @@ const getLocation = () => {
   };
   return (
     <div>
-      <form onSubmit={handleSubmit} className="mx-auto text-center mt-5 mb-5">
+    <div className="d-flex"> 
+      <form onSubmit={handleSubmit} className="mx-auto text-center mt-5 mb-5 form">
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
@@ -178,6 +179,7 @@ const getLocation = () => {
         {error && <p>{error}</p>}
       </form>
 
+    </div>
       <Footer />
     </div>
   );

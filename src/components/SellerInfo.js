@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 
-function Shopinfo() {
+function SellerDetails() {
   return (
     <div>
       <section
@@ -87,7 +87,7 @@ function Shopinfo() {
                   </div>
                 </div>
                 <a href="!#" className="primary-btn">
-                  ADD TO CARD
+                  ADD TO CART
                 </a>
                 <a href="!#" className="heart-icon">
                   <span className="icon_heart_alt"></span>
@@ -391,4 +391,4 @@ function Shopinfo() {
   );
 }
 
-export default Shopinfo;
+export default SellerDetails;

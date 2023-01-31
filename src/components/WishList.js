@@ -1,7 +1,8 @@
 import React from "react";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
-function ShoppingCart() {
+function WishList() {
   return (
     <div>
       <section className="shoping-cart spad">
@@ -82,9 +83,9 @@ function ShoppingCart() {
           <div className="row">
             <div className="col-lg-12">
               <div className="shoping__cart__btns">
-                <a href="!#" className="primary-btn cart-btn">
+                <Link to="/Buy" className="primary-btn cart-btn btn btn-primary">
                   CONTINUE SHOPPING
-                </a>
+                </Link>
                 <a href="!#" className="primary-btn cart-btn cart-btn-right">
                   <span className="icon_loading"></span>
                   UPDATE CART
@@ -128,4 +129,4 @@ function ShoppingCart() {
   );
 }
 
-export default ShoppingCart;
+export default WishList;

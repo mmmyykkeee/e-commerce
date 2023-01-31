@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-import handleSellButtonClick from './Header'
 import '../App.css'
 
 const Chat = () => {

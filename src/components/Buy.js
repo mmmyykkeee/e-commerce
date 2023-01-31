@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Hero from "./Hero";
 import Items from "./Items";
 
-function Shop() {
+function Buy() {
   
   return (
     <div>
@@ -39,4 +39,4 @@ function Shop() {
   );
 }
 
-export default Shop;
+export default Buy;

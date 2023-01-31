@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {jQuery , $} from "jquery";
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-window.jQuery = window.$ = $;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

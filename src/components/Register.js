@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link, Routes, Route } from "react-router-dom"
-import Login from './Login'
-import { Form, InputGroup, FormControl, Button } from "react-bootstrap";
+import { Link, Routes, Route } from "react-router-dom";
+import Login from "./Login";
+import { Form, Button } from "react-bootstrap";
 import Footer from "./Footer";
 
 const Register = () => {
@@ -80,7 +80,7 @@ const Register = () => {
             </Form.Label>
             <Form.Control
               type="number"
-              placeholder="+254 701 234 567"
+              placeholder="+254701234567"
               value={phonenumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
             />

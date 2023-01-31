@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import "../App.css";
 
@@ -27,45 +27,45 @@ const Login = () => {
     setIsLogin(!isLogin);
   };
 
-    return (
-      <div>
-        <h2 className="container text-center font-weight-bold">
-          Log in to continue
-        </h2>
-        <br/>
-        <form className="login-form" onSubmit={handleSubmit}>
-          {!isLogin && (
-            <input
-              type="text"
-              placeholder="Name"
-              value={(phonenumber = "")}
-              onChange={(e) => setPhoneNumber(e.target.value)}
-              required
-            />
-          )}
+  return (
+    <div>
+      <h2 className="container text-center font-weight-bold">
+        Log in to continue
+      </h2>
+      <br />
+      <form className="login-form" onSubmit={handleSubmit}>
+        {!isLogin && (
           <input
             type="text"
-            placeholder={isLogin ? "+254 701 234 567" : "Email"}
-            value={phonenumber}
+            placeholder="Name"
+            value={(phonenumber = "")}
             onChange={(e) => setPhoneNumber(e.target.value)}
             required
           />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-          <button type="submit">{isLogin ? "Log In" : "Register"}</button>
+        )}
+        <input
+          type="text"
+          placeholder={isLogin ? "+254701234567" : "Email"}
+          value={phonenumber}
+          onChange={(e) => setPhoneNumber(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <button type="submit">{isLogin ? "Log In" : "Register"}</button>
 
-          <Link to="/Register">
-            <button type="button">Create an Account</button>
-          </Link>
-        </form>
-        <Footer />
-      </div>
-    );
+        <Link to="/Register">
+          <button type="button">Create an Account</button>
+        </Link>
+      </form>
+      <Footer />
+    </div>
+  );
 };
 
 export default Login;
