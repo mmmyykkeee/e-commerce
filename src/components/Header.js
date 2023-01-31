@@ -154,7 +154,7 @@ function Header() {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/Shop" onClick={handleFaBarsClick}>
+                      <Link to="/Buy" onClick={handleFaBarsClick}>
                         Buy
                       </Link>
                     </li>
