@@ -17,7 +17,7 @@ export default function Items() {
         />
         <Items2
           img="./img/featured/feature-3.jpg"
-          name="Pears"
+          name="Carrots"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
         />
         <Items2
@@ -27,12 +27,12 @@ export default function Items() {
         />
         <Items2
           img="./img/featured/feature-5.jpg"
-          name="Grapes"
+          name="Ginger"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
         />
         <Items2
           img="./img/featured/feature-6.jpg"
-          name="Burger"
+          name="Potatoes"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
         />
         <Items2

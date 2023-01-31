@@ -92,7 +92,7 @@ p {
 
 /*Image*/
 .card-image {
-  height: 100%;
+  height: 120%;
   width: 100%;
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
