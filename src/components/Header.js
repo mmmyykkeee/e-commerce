@@ -96,14 +96,14 @@ function Header() {
           </div>
           <div className="container">
             <div className="row">
-              <div className="col-lg-3 ">
+              <div className="col-lg-2">
                 <div className="header__logo">
                   <Link to="/">
                     <img src="img/logo.png" alt="" className="w-2" />
                   </Link>
                 </div>
               </div>
-              <div className="col-lg-7">
+              <div className="col-lg-8">
                 <nav className="header__menu">
                   <ul>
                     <li className="actives">
@@ -130,11 +130,14 @@ function Header() {
                 <div className="header__cart">
                   <ul>
                     <li>
-                      <a href="!#">
-                        <i className="fa fa-heart wish-list" title="Wish List"></i> <span>1</span>
-                      </a>
+                      <Link to="/WishList">
+                        <i
+                          className="fa fa-heart wish-list"
+                          title="Wish List"
+                        ></i>
+                        <span>1</span>
+                      </Link>
                     </li>
-                    
                   </ul>
                   <div className="header__cart__price">
                     <span>Kshs. 10.00</span>
@@ -146,7 +149,7 @@ function Header() {
             <div className="hamburger__open">
               <i className="fa fa-bars" onClick={handleFaBarsClick}></i>
               {showMobileNav && (
-                <div className="mobile-nav bg-secondary text-white">
+                <div className="mobile-nav bg-secondary text-white ">
                   <ul className="mx-4 side-nav">
                     <li>
                       <Link to="/" onClick={handleFaBarsClick}>

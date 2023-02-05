@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
-const LikeButton = ({ item }) => {
+const LikeButton = ({ items }) => {
   const [likes, setLikes] = useState(0);
   const [likedItem, setLikedItem] = useState("");
 
   const handleLikeClick = () => {
-    if (likes > 0 && likedItem === item) {
+    if (likes > 0 && likedItem === items) {
       setLikes(0);
       setLikedItem("");
     } else {
       setLikes(likes + 1);
-      setLikedItem(item);
+      setLikedItem(items);
     }
   };
 

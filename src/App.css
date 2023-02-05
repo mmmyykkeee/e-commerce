@@ -236,9 +236,6 @@ a:focus {
   list-style: none;
 }
 
-.mobile-nav {
-  translate: scale(2);
-}
 
 ul,
 ol {

@@ -1,79 +1,49 @@
-import React from "react";
-import Footer from "./Footer";
-import { Link } from "react-router-dom";
+import React from 'react'
+import {Link} from 'react-router-dom'
+import WishedProducts from './WishedProducts';
+import Footer from './Footer';
 
-function WishList() {
+function WishList({img, ProductName, Price, Quantity, Total}) {
   return (
     <div>
       <section className="shoping-cart spad">
         <div className="container">
-          <div className="row">
+          <div className="rw">
             <div className="col-lg-12">
               <div className="shoping__cart__table">
                 <table>
                   <thead>
-                    <tr>
-                      <th className="shoping__product">Products</th>
-                      <th>Price</th>
-                      <th>Quantity</th>
-                      <th>Total</th>
-                      <th></th>
-                    </tr>
+                    <nav className='d-flex justify-content-between'>
+                      <b className=' w-50 text-left'>Product</b>
+                      <b className=' w-2 text-left'>Price</b>
+                      <b className='w-25'>Quantity</b>
+                      <b>Total</b>
+                    </nav>
+                    <hr />
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="shoping__cart__item">
-                        <img src="img/cart/cart-1.jpg" alt="" />
-                        <h5>Vegetable’s Package</h5>
-                      </td>
-                      <td className="shoping__cart__price">Kshs. 55.00</td>
-                      <td className="shoping__cart__quantity">
-                        <div className="quantity">
-                          <div className="pro-qty">
-                            <input type="text" value="1" />
-                          </div>
-                        </div>
-                      </td>
-                      <td className="shoping__cart__total">Kshs. 110.00</td>
-                      <td className="shoping__cart__item__close">
-                        <span className="icon_close"></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="shoping__cart__item">
-                        <img src="img/cart/cart-2.jpg" alt="" />
-                        <h5>Fresh Garden Vegetable</h5>
-                      </td>
-                      <td className="shoping__cart__price">Kshs. 39.00</td>
-                      <td className="shoping__cart__quantity">
-                        <div className="quantity">
-                          <div className="pro-qty">
-                            <input type="text" value="1" />
-                          </div>
-                        </div>
-                      </td>
-                      <td className="shoping__cart__total">Kshs. 39.99</td>
-                      <td className="shoping__cart__item__close">
-                        <span className="icon_close"></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="shoping__cart__item">
-                        <img src="img/cart/cart-3.jpg" alt="" />
-                        <h5>Organic Bananas</h5>
-                      </td>
-                      <td className="shoping__cart__price">Kshs. 69.00</td>
-                      <td className="shoping__cart__quantity">
-                        <div className="quantity">
-                          <div className="pro-qty">
-                            <input type="text" value="1" />
-                          </div>
-                        </div>
-                      </td>
-                      <td className="shoping__cart__total">Kshs. 69.99</td>
-                      <td className="shoping__cart__item__close">
-                        <span className="icon_close"></span>
-                      </td>
+                      <WishedProducts
+                        img="img/cart/cart-1.jpg"
+                        ProductName="Vegetable"
+                        Price="100"
+                        Quantity="1"
+                        Total="100"
+                      />
+                      <WishedProducts
+                        img="img/cart/cart-2.jpg"
+                        ProductName="Fresh Garden Vegetable"
+                        Price="40"
+                        Quantity="1"
+                        Total="40"
+                      />
+                      <WishedProducts
+                        img="img/cart/cart-3.jpg"
+                        ProductName="Organic Bananas"
+                        Price="70"
+                        Quantity="1"
+                        Total="70"
+                      />
                     </tr>
                   </tbody>
                 </table>
@@ -83,7 +53,10 @@ function WishList() {
           <div className="row">
             <div className="col-lg-12">
               <div className="shoping__cart__btns">
-                <Link to="/Buy" className="primary-btn cart-btn btn btn-primary">
+                <Link
+                  to="/Buy"
+                  className="primary-btn cart-btn btn btn-primary"
+                >
                   CONTINUE SHOPPING
                 </Link>
                 <a href="!#" className="primary-btn cart-btn cart-btn-right">
@@ -129,4 +102,13 @@ function WishList() {
   );
 }
 
-export default WishList;
+export default WishList
+
+
+
+
+
+
+
+
+ 
