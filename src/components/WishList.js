@@ -4,7 +4,7 @@ import { WishLists} from './Items';
 
 function WishList({products}) {
   return (
-    <div>
+    <div className='border container-fluid'>
       <WishLists />
       <br/>
       <Footer />

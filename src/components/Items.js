@@ -8,72 +8,72 @@ const Items = () => {
   const [products, setProducts] = useState([
     {
       id: 1,
-      name: "Product 1",
-      img: "https://picsum.photos/220/80",
-      description: "Description 1",
+      name: "Meat",
+      img: "img/featured/feature-1.jpg",
+      description: "Check out all of these gorgeous mountain trips.",
       price: 10.0,
       liked: false,
       action: "X",
     },
     {
       id: 2,
-      name: "Product 2",
-      img: "https://picsum.photos/220/81",
-      description: "Description 2",
+      name: "Banana",
+      img: "img/featured/feature-2.jpg",
+      description: "Check out all of these gorgeous mountain trips.",
       price: 20.0,
       liked: false,
       action: "X",
     },
     {
       id: 3,
-      name: "Product 3",
-      img: "https://picsum.photos/220/82",
-      description: "Description 3",
+      name: "Carrots",
+      img: "img/featured/feature-3.jpg",
+      description: "Check out all of these gorgeous mountain trips.",
       price: 30.0,
       liked: false,
       action: "X",
     },
     {
       id: 4,
-      name: "Product 4",
-      img: "https://picsum.photos/220/83",
-      description: "Description 4",
+      name: "WaterMelon",
+      img: "img/featured/feature-4.jpg",
+      description: "Check out all of these gorgeous mountain trips.",
       price: 40.0,
       liked: false,
       action: "X",
     },
     {
       id: 5,
-      name: "Product 5",
-      img: "https://picsum.photos/220/84",
-      description: "Description 5",
+      name: "Ginger",
+      img: "img/featured/feature-5.jpg",
+      description: "Check out all of these gorgeous mountain trips.",
       price: 50.0,
       liked: false,
       action: "X",
     },
     {
       id: 6,
-      name: "Product 6",
-      img: "https://picsum.photos/220/85",
-      description: "Description 6",
+      name: "Potatoes",
+      img: "img/featured/feature-6.jpg",
+      description: "Check out all of these gorgeous mountain trips.",
       price: 60.0,
       liked: false,
       action: "X",
     },
     {
       id: 7,
-      name: "Product 7",
-      img: "https://picsum.photos/220/86",
-      description: "Description 7",
+      name: "Mango",
+      img: "img/featured/feature-7.jpg",
+      description: "Check out all of these gorgeous mountain trips.",
       price: 70.0,
       liked: false,
       action: "X",
     },
     {
       id: 8,
-      name: "Product 8",
-      img: "https://picsum.photos/220/87",
-      description: "Description 8",
+      name: "Apple",
+      img: "img/featured/feature-8.jpg",
+      description: "Check out all of these gorgeous mountain trips.",
       price: 80.0,
       liked: false,
       action: "X",
@@ -128,20 +128,28 @@ const Items = () => {
         <div c1assName="col-lg-12 my-3">
           <CardDeck>
             {products.slice(0, 4).map((product) => (
-              <Card key={product.id} className="border border-dark">
-                <Card.Body>
-                  <img src={product.img} />
-                  <Card.Title>{product.name}</Card.Title>
-                  <Card.Text>{product.description}</Card.Text>
-                  <Card.Text>Price: {product.price}</Card.Text>
+              <div
+                className="card"
+                key={product.id}
+                style={{
+                  backgroundImage: `url(${product.img})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              >
+                <div className="content">
+                  <h2 className="title">{product.name}</h2>
+                  <p className="copy mt-0">{product.description}</p>
+                  <p className="mt-0 price">Price: {product.price}</p>
                   <Button
                     variant={product.liked ? "danger" : "light"}
                     onClick={() => toggleLike(product.id)}
                   >
                     {product.liked ? <FaHeart /> : <FaRegHeart />}
                   </Button>
-                </Card.Body>
-              </Card>
+                </div>
+              </div>
             ))}
           </CardDeck>
         </div>
@@ -150,21 +158,28 @@ const Items = () => {
         <div c1assName="col-lg-12 my-3">
           <CardDeck>
             {products.slice(4, 8).map((product) => (
-              <Card key={product.id} className="border border-dark">
-                <Card.Body>
-                  <img src={product.img} />
-
-                  <Card.Title>{product.name}</Card.Title>
-                  <Card.Text>{product.description}</Card.Text>
-                  <Card.Text>Price: {product.price}</Card.Text>
+              <div
+                className="card"
+                key={product.id}
+                style={{
+                  backgroundImage: `url(${product.img})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              >
+                <div className="content">
+                  <h2 className="title">{product.name}</h2>
+                  <p className="copy mt-0">{product.description}</p>
+                  <p className="mt-0 price">Price: {product.price}</p>
                   <Button
                     variant={product.liked ? "danger" : "light"}
                     onClick={() => toggleLike(product.id)}
                   >
                     {product.liked ? <FaHeart /> : <FaRegHeart />}
                   </Button>
-                </Card.Body>
-              </Card>
+                </div>
+              </div>
             ))}
           </CardDeck>
         </div>
@@ -186,15 +201,16 @@ const WishLists = () => {
   );
   const [products, setProducts] = useState(likedProducts);
 
-  const handleRemoveProduct = (product) => {
-    setProducts(products.filter((p) => p !== product));
-  };
+  // const handleRemoveProduct = (product) => {
+  //   setProducts(products.filter((p) => p !== product));
+  // };
 
   return (
     <div>
       <div className="my-5 d-flex justify-content-center container">
         <div className="text-center">
-          <h3>WishList</h3>
+          <h2 className="font-weight-bold">WishList</h2>
+          <br/>
           {likedProducts.length === 0 && <p>No items in the WishList</p>}
           {likedProducts.length > 0 && (
             <div>
@@ -202,18 +218,28 @@ const WishLists = () => {
                 <div className="col-lg-12 my-1">
                   <CardDeck striped bordered hover>
                     {likedProducts.slice(0, 4).map((product) => (
-                      <Card key={product.id} className="border border-dark">
-                        <Card.Body>
-                          <img src={product.img} alt={product.name} />
-                          <Card.Title>{product.name}</Card.Title>
-                          <Card.Text>{product.description}</Card.Text>
-                          <Card.Text>Price: {product.price}</Card.Text>
-                          <Button
+                      <Card
+                        key={product.id}
+                        className="card border border-dark "
+                        style={{
+                          backgroundImage: `url(${product.img})`,
+                          backgroundSize: "cover",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "center",
+                        }}
+                      >
+                        <Card.Body className="row">
+                          <div className="content col-12">
+                            <h2 className="title">{product.name}</h2>
+                            <p className="copy mt-0">{product.description}</p>
+                            <p className="mt-0 price">Price: {product.price}</p>
+                          </div>
+                          {/* <Button
                             variant="danger"
                             onClick={() => handleRemoveProduct(product.id)}
                           >
                             x
-                          </Button>
+                          </Button> */}
                         </Card.Body>
                       </Card>
                     ))}
@@ -225,18 +251,30 @@ const WishLists = () => {
                   <div className="col-lg-12 my-1">
                     <CardDeck striped bordered hover>
                       {likedProducts.slice(4, 8).map((product) => (
-                        <Card key={product.id} className="border border-dark">
-                          <Card.Body>
-                            <img src={product.img} alt={product.name} />
-                            <Card.Title>{product.name}</Card.Title>
-                            <Card.Text>{product.description}</Card.Text>
-                            <Card.Text>Price: {product.price}</Card.Text>
-                            <Button
+                        <Card
+                          key={product.id}
+                          className="card border border-dark "
+                          style={{
+                            backgroundImage: `url(${product.img})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                          }}
+                        >
+                          <Card.Body className="row">
+                            <div className="content col-12">
+                              <h2 className="title">{product.name}</h2>
+                              <p className="copy mt-0">{product.description}</p>
+                              <p className="mt-0 price">
+                                Price: {product.price}
+                              </p>
+                            </div>
+                            {/* <Button
                               variant="danger"
                               onClick={() => handleRemoveProduct(product.id)}
                             >
                               x
-                            </Button>
+                            </Button> */}
                           </Card.Body>
                         </Card>
                       ))}
@@ -249,18 +287,30 @@ const WishLists = () => {
                   <div className="col-lg-12 my-1">
                     <CardDeck striped bordered hover>
                       {likedProducts.slice(8, 12).map((product) => (
-                        <Card key={product.id} className="border border-dark">
-                          <Card.Body>
-                            <img src={product.img} alt={product.name} />
-                            <Card.Title>{product.name}</Card.Title>
-                            <Card.Text>{product.description}</Card.Text>
-                            <Card.Text>Price: {product.price}</Card.Text>
-                            <Button
+                        <Card
+                          key={product.id}
+                          className="card border border-dark "
+                          style={{
+                            backgroundImage: `url(${product.img})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                          }}
+                        >
+                          <Card.Body className="row">
+                            <div className="content col-12">
+                              <h2 className="title">{product.name}</h2>
+                              <p className="copy mt-0">{product.description}</p>
+                              <p className="mt-0 price">
+                                Price: {product.price}
+                              </p>
+                            </div>
+                            {/* <Button
                               variant="danger"
                               onClick={() => handleRemoveProduct(product.id)}
                             >
                               x
-                            </Button>
+                            </Button> */}
                           </Card.Body>
                         </Card>
                       ))}
@@ -273,18 +323,30 @@ const WishLists = () => {
                   <div className="col-lg-12 my-1">
                     <CardDeck striped bordered hover>
                       {likedProducts.slice(12, 16).map((product) => (
-                        <Card key={product.id} className="border border-dark">
-                          <Card.Body>
-                            <img src={product.img} alt={product.name} />
-                            <Card.Title>{product.name}</Card.Title>
-                            <Card.Text>{product.description}</Card.Text>
-                            <Card.Text>Price: {product.price}</Card.Text>
-                            <Button
+                        <Card
+                          key={product.id}
+                          className="card border border-dark "
+                          style={{
+                            backgroundImage: `url(${product.img})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                          }}
+                        >
+                          <Card.Body className="row">
+                            <div className="content col-12">
+                              <h2 className="title">{product.name}</h2>
+                              <p className="copy mt-0">{product.description}</p>
+                              <p className="mt-0 price">
+                                Price: {product.price}
+                              </p>
+                            </div>
+                            {/* <Button
                               variant="danger"
                               onClick={() => handleRemoveProduct(product.id)}
                             >
                               x
-                            </Button>
+                            </Button> */}
                           </Card.Body>
                         </Card>
                       ))}
@@ -297,18 +359,30 @@ const WishLists = () => {
                   <div className="col-lg-12 my-1">
                     <CardDeck striped bordered hover>
                       {likedProducts.slice(16, 20).map((product) => (
-                        <Card key={product.id} className="border border-dark">
-                          <Card.Body>
-                            <img src={product.img} alt={product.name} />
-                            <Card.Title>{product.name}</Card.Title>
-                            <Card.Text>{product.description}</Card.Text>
-                            <Card.Text>Price: {product.price}</Card.Text>
-                            <Button
+                        <Card
+                          key={product.id}
+                          className="card border border-dark "
+                          style={{
+                            backgroundImage: `url(${product.img})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                          }}
+                        >
+                          <Card.Body className="row">
+                            <div className="content col-12">
+                              <h2 className="title">{product.name}</h2>
+                              <p className="copy mt-0">{product.description}</p>
+                              <p className="mt-0 price">
+                                Price: {product.price}
+                              </p>
+                            </div>
+                            {/* <Button
                               variant="danger"
                               onClick={() => handleRemoveProduct(product.id)}
                             >
                               x
-                            </Button>
+                            </Button> */}
                           </Card.Body>
                         </Card>
                       ))}
@@ -322,17 +396,20 @@ const WishLists = () => {
                     <CardDeck striped bordered hover>
                       {likedProducts.slice(20, 24).map((product) => (
                         <Card key={product.id} className="border border-dark">
-                          <Card.Body>
-                            <img src={product.img} alt={product.name} />
-                            <Card.Title>{product.name}</Card.Title>
-                            <Card.Text>{product.description}</Card.Text>
-                            <Card.Text>Price: {product.price}</Card.Text>
-                            <Button
+                          <Card.Body className="row">
+                            <div className="content col-12">
+                              <h2 className="title">{product.name}</h2>
+                              <p className="copy mt-0">{product.description}</p>
+                              <p className="mt-0 price">
+                                Price: {product.price}
+                              </p>
+                            </div>
+                            {/* <Button
                               variant="danger"
                               onClick={() => handleRemoveProduct(product.id)}
                             >
                               x
-                            </Button>
+                            </Button> */}
                           </Card.Body>
                         </Card>
                       ))}
@@ -345,18 +422,30 @@ const WishLists = () => {
                   <div className="col-lg-12 my-1">
                     <CardDeck striped bordered hover>
                       {likedProducts.slice(24, 28).map((product) => (
-                        <Card key={product.id} className="border border-dark">
-                          <Card.Body>
-                            <img src={product.img} alt={product.name} />
-                            <Card.Title>{product.name}</Card.Title>
-                            <Card.Text>{product.description}</Card.Text>
-                            <Card.Text>Price: {product.price}</Card.Text>
-                            <Button
+                        <Card
+                          key={product.id}
+                          className="card border border-dark "
+                          style={{
+                            backgroundImage: `url(${product.img})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                          }}
+                        >
+                          <Card.Body className="row">
+                            <div className="content col-12">
+                              <h2 className="title">{product.name}</h2>
+                              <p className="copy mt-0">{product.description}</p>
+                              <p className="mt-0 price">
+                                Price: {product.price}
+                              </p>
+                            </div>
+                            {/* <Button
                               variant="danger"
                               onClick={() => handleRemoveProduct(product.id)}
                             >
                               x
-                            </Button>
+                            </Button> */}
                           </Card.Body>
                         </Card>
                       ))}
@@ -369,18 +458,30 @@ const WishLists = () => {
                   <div className="col-lg-6 my-1">
                     <CardDeck striped bordered hover>
                       {likedProducts.slice(28, 32).map((product) => (
-                        <Card key={product.id} className="border border-dark">
-                          <Card.Body>
-                            <img src={product.img} alt={product.name} />
-                            <Card.Title>{product.name}</Card.Title>
-                            <Card.Text>{product.description}</Card.Text>
-                            <Card.Text>Price: {product.price}</Card.Text>
-                            <Button
+                        <Card
+                          key={product.id}
+                          className="card border border-dark "
+                          style={{
+                            backgroundImage: `url(${product.img})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                          }}
+                        >
+                          <Card.Body className="row">
+                            <div className="content col-12">
+                              <h2 className="title">{product.name}</h2>
+                              <p className="copy mt-0">{product.description}</p>
+                              <p className="mt-0 price">
+                                Price: {product.price}
+                              </p>
+                            </div>
+                            {/* <Button
                               variant="danger"
                               onClick={() => handleRemoveProduct(product.id)}
                             >
                               x
-                            </Button>
+                            </Button> */}
                           </Card.Body>
                         </Card>
                       ))}

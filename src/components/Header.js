@@ -5,7 +5,6 @@ import Home from "./Home";
 import SellerDetails from "./SellerInfo";
 import Buy from "./Buy";
 import Blog from "./Blog";
-import WishLists from "./WishLists";
 import WishList from "./WishList";
 import Checkout from "./Checkout";
 import BlogDetails from "./BlogDetails";
@@ -48,7 +47,7 @@ function Header({itemCount}) {
           <div className="header__top">
             <div className="container">
               <div className="row">
-                <div className="col-lg-6 col-md-6">
+                <div className="col-lg-7 col-md-6">
                   <div className="header__top__left">
                     <ul>
                       <li>
@@ -62,7 +61,7 @@ function Header({itemCount}) {
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-6 col-md-6">
+                <div className="col-lg-5 col-md-6 ">
                   <div className="header__top__right">
                     <div className="header__top__right__social">
                       <a href="https://www.facebook.com">
@@ -204,7 +203,6 @@ function Header({itemCount}) {
         <Route path="/Buy" element={<Buy />} />
         <Route path="/SellerDetails" element={<SellerDetails />} />
         <Route path="/WishList" element={<WishList />} />
-        <Route path="/WishLists" element={<WishLists />} />
         <Route path="/BlogDetails" element={<BlogDetails />} />
         <Route path="/Checkout" element={<Checkout />} />
         <Route path="/Blog" element={<Blog />} />

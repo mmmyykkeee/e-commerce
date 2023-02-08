@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
 import Footer from "./Footer";
-import { Routes} from "react-router-dom";
 import Items from "./Items";
 
 function Home() {
@@ -107,7 +106,6 @@ function Home() {
 
       <br />
       <br />
-      <Routes></Routes>
       <Footer />
     </div>
   );
