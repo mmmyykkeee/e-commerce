@@ -5,6 +5,7 @@ import Home from "./Home";
 import SellerDetails from "./SellerInfo";
 import Buy from "./Buy";
 import Blog from "./Blog";
+import WishLists from "./WishLists";
 import WishList from "./WishList";
 import Checkout from "./Checkout";
 import BlogDetails from "./BlogDetails";
@@ -15,7 +16,7 @@ import Register from "./Register";
 import Chat from "./Chat";
 import Items from "./Items";
 
-function Header() {
+function Header({itemCount}) {
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
 
@@ -135,7 +136,7 @@ function Header() {
                           className="fa fa-heart wish-list"
                           title="Wish List"
                         ></i>
-                        <span>1</span>
+                        <span>{itemCount}</span>
                       </Link>
                     </li>
                   </ul>
@@ -203,6 +204,7 @@ function Header() {
         <Route path="/Buy" element={<Buy />} />
         <Route path="/SellerDetails" element={<SellerDetails />} />
         <Route path="/WishList" element={<WishList />} />
+        <Route path="/WishLists" element={<WishLists />} />
         <Route path="/BlogDetails" element={<BlogDetails />} />
         <Route path="/Checkout" element={<Checkout />} />
         <Route path="/Blog" element={<Blog />} />

@@ -77,6 +77,17 @@ p {
   width: 90%;
 }
 
+.product-item {
+  border: 1px solid #ccc;
+  padding: 2px;
+  text-align: center;
+}
+
+.product-item i {
+  font-size: 36px;
+  cursor: pointer;
+}
+
 .card {
   margin: 0 2rem 2rem 0;
   height: 254px;
@@ -109,10 +120,11 @@ p {
   background-color: #00b53f;
   height: 90%;
   width: 260px;
-  bottom: -70%;
+  bottom: 0%;
   border-radius: 1em 1em 0 0;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 1rem;
+  display: none;
 }
 
 /*Text*/
@@ -130,6 +142,7 @@ p {
 
 .card:hover .card-description {
   transform: translateY(-75%);
+  display: block;
 }
 
 @media (max-width: 768px) {

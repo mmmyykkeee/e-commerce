@@ -1,0 +1,66 @@
+const products = [
+//         {
+//           id: 1,
+//           name: "Meat",
+//           img: "./img/featured/feature-1.jpg",
+//           price: "$10.00",
+//           description:
+//             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+//         },
+//         {
+//           id: 2,
+//           name: "Banana",
+//           img: "./img/featured/feature-2.jpg",
+//           price: "$10.00",
+//           description:
+//             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+//         },
+//         {
+//           id: 3,
+//           name: "Carrots",
+//           img: "./img/featured/feature-3.jpg",
+//           price: "$10.00",
+//           description:
+//             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+//         },
+//         {
+//           id: 4,
+//           name: "Watermelon",
+//           img: "./img/featured/feature-4.jpg",
+//           price: "$10.00",
+//           description:
+//             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+//         },
+//         {
+//           id: 5,
+//           name: "Ginger",
+//           img: "./img/featured/feature-5.jpg",
+//           price: "$10.00",
+//           description:
+//             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+//         },
+//         {
+//           id: 6,
+//           name: "Potatoes",
+//           img: "./img/featured/feature-6.jpg",
+//           price: "$10.00",
+//           description:
+//             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+//         },
+//         {
+//           id: 7,
+//           name: "Mango",
+//           img: "./img/featured/feature-7.jpg",
+//           price: "$10.00",
+//           description:
+//             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+//         },
+//         {
+//           id: 8,
+//           name: "Apple",
+//           img: "./img/featured/feature-8.jpg",
+//           price: "$10.00",
+//           description:
+//             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+//         },
+//       ];

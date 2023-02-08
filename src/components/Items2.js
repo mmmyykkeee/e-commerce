@@ -1,5 +1,6 @@
 import React from "react";
 import LikeButton from "./LikeButton";
+import '../App.css'
 
 function Items2({img,name,description}) {
   return (
